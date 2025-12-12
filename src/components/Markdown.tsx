@@ -6,17 +6,27 @@ import 'highlight.js/styles/github.css';
 // 配置marked，添加highlight插件
 marked.use({
   extensions: [],
+  gfm: true,
+  breaks: true,
+  // 使用hooks来处理代码高亮和HTML转义
   hooks: {
     postprocess(html) {
-      // 手动处理代码高亮
+      // 手动处理代码高亮和HTML转义
       return html.replace(/<pre><code class="language-(\w+)">(.*?)<\/code><\/pre>/gs, (_match, lang, code) => {
+        // 首先反转义HTML字符，然后再进行高亮处理
+        const unescapedCode = code
+          .replace(/&lt;/g, '<')
+          .replace(/&gt;/g, '>')
+          .replace(/&quot;/g, '"')
+          .replace(/&#39;/g, "'")
+          .replace(/&amp;/g, '&');
+        
         const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-        const highlightedCode = hljs.highlight(code, { language }).value;
+        const highlightedCode = hljs.highlight(unescapedCode, { language }).value;
         return `<pre><code class="language-${language}">${highlightedCode}</code></pre>`;
       });
     }
-  },
-  breaks: true
+  }
 });
 
 interface MarkdownProps {
