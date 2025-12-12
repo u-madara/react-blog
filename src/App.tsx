@@ -1,74 +1,20 @@
 import { useState, useEffect } from 'react';
-import { getAllPosts } from './lib/api';
+import { Routes, Route, Link, useParams, useNavigate } from 'react-router-dom';
+import { getAllPosts, getPostBySlug } from './lib/api';
 import type { Post } from './interfaces/post';
 import './App.css';
 import { Markdown, MarkdownStyleComponent } from './components/Markdown';
 import Footer from './components/Footer';
 
-function App() {
+// 首页组件
+const Home = () => {
   const [posts, setPosts] = useState<Post[]>([]);
-  const [selectedPost, setSelectedPost] = useState<Post | null>(null);
-  const [showDetail, setShowDetail] = useState<boolean>(false);
 
-  // 在组件初始化时获取所有文章
   useEffect(() => {
     const allPosts = getAllPosts();
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setPosts(allPosts);
   }, []);
-
-  const selectPost = (post: Post) => {
-    setSelectedPost(post);
-    setShowDetail(true);
-  };
-
-  const goBack = () => {
-    setShowDetail(false);
-    setSelectedPost(null);
-  };
-
-  if (showDetail && selectedPost) {
-    return (
-      <>
-        <MarkdownStyleComponent />
-        <div className="app-container">
-          <header>
-            <div className="container">
-              <button className="back-button" onClick={goBack}>
-                back
-              </button>
-              <h1>小羽的笔记</h1>
-            </div>
-          </header>
-          
-          <main>
-            <div className="container post-detail">
-              <article>
-                <h2 className="post-title">{selectedPost.title}</h2>
-                <div className="post-meta">
-                  <span className="post-date">{new Date(selectedPost.date).toLocaleDateString()}</span>
-                  <span className="post-author">{selectedPost.author.name}</span>
-                </div>
-                {selectedPost.coverImage && (
-                  <div className="cover-image-container">
-                    <img 
-                      src={selectedPost.coverImage.startsWith('/') ? `/react-blog${selectedPost.coverImage}` : selectedPost.coverImage} 
-                      alt={selectedPost.title} 
-                      className="cover-image"
-                    />
-                  </div>
-                )}
-                <div className="post-content">
-                  <Markdown content={selectedPost.content} />
-                </div>
-              </article>
-            </div>
-          </main>
-          <Footer />
-        </div>
-      </>
-    );
-  }
 
   const heroPost = posts[0];
   const morePosts = posts.slice(1);
@@ -108,8 +54,10 @@ function App() {
                 )}
                 <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
                   <div>
-                    <h2 className="hero-title text-4xl lg:text-5xl font-bold tracking-tighter leading-tight cursor-pointer" onClick={() => selectPost(heroPost)}>
-                      {heroPost.title}
+                    <h2 className="hero-title text-4xl lg:text-5xl font-bold tracking-tighter leading-tight">
+                      <Link to={`/posts/${heroPost.slug}`} className="text-blue-600 hover:underline">
+                        {heroPost.title}
+                      </Link>
                     </h2>
                     <div className="mb-4 text-lg text-gray-600 mt-4">
                       <span className="post-date">{new Date(heroPost.date).toLocaleDateString()}</span>
@@ -132,8 +80,7 @@ function App() {
                   {morePosts.map((post) => (
                     <div 
                       key={post.slug} 
-                      className="post-preview cursor-pointer"
-                      onClick={() => selectPost(post)}
+                      className="post-preview"
                     >
                       {post.coverImage && (
                         <div className="cover-image-container mb-8">
@@ -144,7 +91,11 @@ function App() {
                           />
                         </div>
                       )}
-                      <h3 className="post-preview-title text-3xl font-bold leading-snug mb-4">{post.title}</h3>
+                      <h3 className="post-preview-title text-3xl font-bold leading-snug mb-4">
+                        <Link to={`/posts/${post.slug}`} className="text-blue-600 hover:underline">
+                          {post.title}
+                        </Link>
+                      </h3>
                       <div className="text-lg mb-4 text-gray-600">
                         <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
                       </div>
@@ -162,6 +113,97 @@ function App() {
         <Footer />
       </div>
     </>
+  );
+};
+
+// 文章详情页组件
+const PostDetail = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
+  const [post, setPost] = useState<Post | null>(null);
+
+  useEffect(() => {
+    if (slug) {
+      const foundPost = getPostBySlug(slug);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setPost(foundPost || null);
+    }
+  }, [slug]);
+
+  const goBack = () => {
+    navigate('/');
+  };
+
+  if (!post) {
+    return (
+      <div className="app-container">
+        <header>
+          <div className="container">
+            <button className="back-button" onClick={goBack}>
+              back
+            </button>
+            <h1>小羽的笔记</h1>
+          </div>
+        </header>
+        <main>
+          <div className="container post-detail">
+            <p>文章未找到</p>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <MarkdownStyleComponent />
+      <div className="app-container">
+        <header>
+          <div className="container">
+            <button className="back-button" onClick={goBack}>
+              back
+            </button>
+            <h1>小羽的笔记</h1>
+          </div>
+        </header>
+        
+        <main>
+          <div className="container post-detail">
+            <article>
+              <h2 className="post-title">{post.title}</h2>
+              <div className="post-meta">
+                <span className="post-date">{new Date(post.date).toLocaleDateString()}</span>
+                <span className="post-author">{post.author.name}</span>
+              </div>
+              {post.coverImage && (
+                <div className="cover-image-container">
+                  <img 
+                    src={post.coverImage.startsWith('/') ? `/react-blog${post.coverImage}` : post.coverImage} 
+                    alt={post.title} 
+                    className="cover-image"
+                  />
+                </div>
+              )}
+              <div className="post-content">
+                <Markdown content={post.content} />
+              </div>
+            </article>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+// 主应用组件，定义路由规则
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/posts/:slug" element={<PostDetail />} />
+    </Routes>
   );
 }
 
