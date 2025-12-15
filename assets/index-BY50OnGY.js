@@ -401,7 +401,383 @@ self.onmessage = function(event) {
 \`\`\`
 
 ### 总结
-web worker是前端实现多线程的重要技术，通过将耗时操作移至后台线程，可以显著提高页面性能和用户体验。在实际开发中，需要根据具体场景选择合适的worker类型，并注意其使用限制。`,__viteBrowserExternal={},__viteBrowserExternal$1=Object.freeze(Object.defineProperty({__proto__:null,default:__viteBrowserExternal},Symbol.toStringTag,{value:"Module"})),require$$0=getAugmentedNamespace(__viteBrowserExternal$1);var kindOf,hasRequiredKindOf;function requireKindOf(){if(hasRequiredKindOf)return kindOf;hasRequiredKindOf=1;var i=Object.prototype.toString;kindOf=function(ee){if(ee===void 0)return"undefined";if(ee===null)return"null";var Ve=typeof ee;if(Ve==="boolean")return"boolean";if(Ve==="string")return"string";if(Ve==="number")return"number";if(Ve==="symbol")return"symbol";if(Ve==="function")return g(ee)?"generatorfunction":"function";if(o(ee))return"array";if(R(ee))return"buffer";if(h(ee))return"arguments";if(c(ee))return"date";if(s(ee))return"error";if(p(ee))return"regexp";switch(a(ee)){case"Symbol":return"symbol";case"Promise":return"promise";case"WeakMap":return"weakmap";case"WeakSet":return"weakset";case"Map":return"map";case"Set":return"set";case"Int8Array":return"int8array";case"Uint8Array":return"uint8array";case"Uint8ClampedArray":return"uint8clampedarray";case"Int16Array":return"int16array";case"Uint16Array":return"uint16array";case"Int32Array":return"int32array";case"Uint32Array":return"uint32array";case"Float32Array":return"float32array";case"Float64Array":return"float64array"}if(f(ee))return"generator";switch(Ve=i.call(ee),Ve){case"[object Object]":return"object";case"[object Map Iterator]":return"mapiterator";case"[object Set Iterator]":return"setiterator";case"[object String Iterator]":return"stringiterator";case"[object Array Iterator]":return"arrayiterator"}return Ve.slice(8,-1).toLowerCase().replace(/\s/g,"")};function a(V){return typeof V.constructor=="function"?V.constructor.name:null}function o(V){return Array.isArray?Array.isArray(V):V instanceof Array}function s(V){return V instanceof Error||typeof V.message=="string"&&V.constructor&&typeof V.constructor.stackTraceLimit=="number"}function c(V){return V instanceof Date?!0:typeof V.toDateString=="function"&&typeof V.getDate=="function"&&typeof V.setDate=="function"}function p(V){return V instanceof RegExp?!0:typeof V.flags=="string"&&typeof V.ignoreCase=="boolean"&&typeof V.multiline=="boolean"&&typeof V.global=="boolean"}function g(V,ee){return a(V)==="GeneratorFunction"}function f(V){return typeof V.throw=="function"&&typeof V.return=="function"&&typeof V.next=="function"}function h(V){try{if(typeof V.length=="number"&&typeof V.callee=="function")return!0}catch(ee){if(ee.message.indexOf("callee")!==-1)return!0}return!1}function R(V){return V.constructor&&typeof V.constructor.isBuffer=="function"?V.constructor.isBuffer(V):!1}return kindOf}var isExtendable,hasRequiredIsExtendable;function requireIsExtendable(){return hasRequiredIsExtendable||(hasRequiredIsExtendable=1,isExtendable=function(a){return typeof a<"u"&&a!==null&&(typeof a=="object"||typeof a=="function")}),isExtendable}var extendShallow,hasRequiredExtendShallow;function requireExtendShallow(){if(hasRequiredExtendShallow)return extendShallow;hasRequiredExtendShallow=1;var i=requireIsExtendable();extendShallow=function(c){i(c)||(c={});for(var p=arguments.length,g=1;g<p;g++){var f=arguments[g];i(f)&&a(c,f)}return c};function a(s,c){for(var p in c)o(c,p)&&(s[p]=c[p])}function o(s,c){return Object.prototype.hasOwnProperty.call(s,c)}return extendShallow}var sectionMatter,hasRequiredSectionMatter;function requireSectionMatter(){if(hasRequiredSectionMatter)return sectionMatter;hasRequiredSectionMatter=1;var i=requireKindOf(),a=requireExtendShallow();sectionMatter=function(h,R){typeof R=="function"&&(R={parse:R});var V=s(h),ee={section_delimiter:"---",parse:g},Ve=a({},ee,R),at=Ve.section_delimiter,nt=V.content.split(/\r?\n/),it=null,ot=p(),_t=[],pt=[];function mt(zt){V.content=zt,it=[],_t=[]}function Ot(zt){pt.length&&(ot.key=c(pt[0],at),ot.content=zt,Ve.parse(ot,it),it.push(ot),ot=p(),_t=[],pt=[])}for(var Ct=0;Ct<nt.length;Ct++){var It=nt[Ct],Pt=pt.length,Ft=It.trim();if(o(Ft,at)){if(Ft.length===3&&Ct!==0){if(Pt===0||Pt===2){_t.push(It);continue}pt.push(Ft),ot.data=_t.join(`
+web worker是前端实现多线程的重要技术，通过将耗时操作移至后台线程，可以显著提高页面性能和用户体验。在实际开发中，需要根据具体场景选择合适的worker类型，并注意其使用限制。`,__vite_glob_0_4=`---
+title: "前端架构师系统化学习路线"
+excerpt: "从前端开发者到架构师的系统化学习路径，涵盖技术深度、架构设计、工程化实践和技术管理四个阶段"
+coverImage: "/assets/blog/preview/cover.jpg"
+date: "2025-12-13"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/preview/cover.jpg"
+---
+
+# 前端架构师系统化学习路线
+
+## 学习路线概述
+
+本学习路线旨在系统性地提升您的技术深度、架构设计能力、工程化实践和技术管理能力，助力您从资深前端开发者成长为优秀的前端架构师。
+
+## 学习路线总览
+
+| 阶段 | 时间周期 | 核心目标 | 重点能力 |
+|------|----------|----------|----------|
+| 第一阶段 | 1-3个月 | 技术深度拓展 | 深入理解底层原理、掌握高级技术 |
+| 第二阶段 | 4-6个月 | 架构设计能力培养 | 系统设计、架构模式、技术选型 |
+| 第三阶段 | 7-9个月 | 工程化实践提升 | 工程体系、质量保障、效能提升 |
+| 第四阶段 | 10-12个月 | 团队协作与技术管理 | 技术领导力、团队协作、知识传承 |
+
+## 第一阶段：技术深度拓展（1-3个月）
+
+### 学习目标
+- 深入理解JavaScript底层机制与性能优化原理
+- 掌握高级前端框架原理与源码分析能力
+- 提升前端安全与跨端技术能力
+
+### 学习内容与计划
+
+#### 第1个月：JavaScript深度与性能优化
+
+**理论学习（第1-2周）**
+- 《JavaScript高级程序设计》第4版 - 重点学习第4、5、6、22章
+- 《你不知道的JavaScript》系列 - 深入理解作用域、闭包、this、原型链
+- 《JavaScript性能优化》- 掌握V8引擎工作原理与优化策略
+
+**实践项目（第3-4周）**
+- 实现一个轻量级Promise库，理解异步编程原理
+- 开发一个性能监控工具，实现关键性能指标采集
+- 优化现有项目中的性能瓶颈，形成优化报告
+
+**推荐资源**
+- [MDN JavaScript指南](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide)
+- [V8引擎博客](https://v8.dev/blog)
+- [Web性能优化指南](https://web.dev/performance/)
+
+**评估标准**
+- [ ] 能够解释JavaScript事件循环机制与异步执行原理
+- [ ] 独立实现Promise/A+规范的Promise库
+- [ ] 完成一个复杂页面的性能优化，首屏加载时间减少30%以上
+
+#### 第2个月：框架原理与源码分析
+
+**理论学习（第1-2周）**
+- Vue.js源码分析：响应式系统、虚拟DOM、组件化原理
+- React源码分析：Fiber架构、Hooks原理、调度算法
+- 前端框架对比分析：设计哲学、适用场景、性能特点
+
+**实践项目（第3-4周）**
+- 实现一个简易的响应式系统，理解数据劫持与依赖收集
+- 开发一个虚拟DOM库，实现diff算法与patch过程
+- 基于源码理解，优化现有项目的框架使用方式
+
+**推荐资源**
+- [Vue.js源码分析](https://ustbhuangyi.github.io/vue-analysis/)
+- [React技术揭秘](https://react.iamkasong.com/)
+- [前端框架源码解析](https://github.com/aooy/blog)
+
+**评估标准**
+- [ ] 能够绘制Vue.js响应式系统完整流程图
+- [ ] 实现一个支持基础功能的虚拟DOM库
+- [ ] 基于框架原理优化现有项目，代码质量提升20%
+
+#### 第3个月：前端安全与跨端技术
+
+**理论学习（第1-2周）**
+- 前端安全：XSS、CSRF、点击劫持、内容安全策略
+- 跨端技术：小程序原理、React Native、Flutter、Electron
+- WebAssembly：原理、应用场景、性能优化
+
+**实践项目（第3-4周）**
+- 开发一个前端安全防护工具集，实现XSS/CSRF防护
+- 构建一个跨端应用框架，支持Web、小程序、原生App
+- 使用WebAssembly优化计算密集型任务
+
+**推荐资源**
+- [Web安全学习手册](https://github.com/White-Hat-Pentest/web-hacking-101-zh)
+- [小程序开发原理](https://github.com/Tencent/wepy)
+- [WebAssembly官方文档](https://developer.mozilla.org/zh-CN/docs/WebAssembly)
+
+**评估标准**
+- [ ] 能够识别并防护常见前端安全漏洞
+- [ ] 实现一个支持多端的轻量级框架
+- [ ] 使用WebAssembly优化性能敏感模块，执行效率提升50%
+
+## 第二阶段：架构设计能力培养（4-6个月）
+
+### 学习目标
+- 掌握系统架构设计原则与方法
+- 提升技术选型与架构决策能力
+- 培养复杂业务场景的架构解决方案设计能力
+
+### 学习内容与计划
+
+#### 第4个月：架构设计基础
+
+**理论学习（第1-2周）**
+- 《架构整洁之道》- 理解架构设计原则与模式
+- 《领域驱动设计》- 掌握DDD在前端架构中的应用
+- 微前端架构：设计原理、实现方案、最佳实践
+
+**实践项目（第3-4周）**
+- 设计一个大型企业级应用的前端架构方案
+- 实现一个微前端框架，解决应用集成与隔离问题
+- 重构现有项目，应用架构设计原则
+
+**推荐资源**
+- [微前端架构](https://micro-frontends.org/)
+- [前端架构设计](https://github.com/fi3ework/blog)
+- [DDD在前端的应用](https://github.com/ddd-crew/ddd-starter-modelling-process)
+
+**评估标准**
+- [ ] 能够设计可扩展、可维护的前端架构方案
+- [ ] 实现一个完整的微前端解决方案
+- [ ] 应用架构原则重构现有项目，提升系统可维护性
+
+#### 第5个月：技术选型与架构决策
+
+**理论学习（第1-2周）**
+- 技术选型方法论：评估维度、决策框架、风险管理
+- 前端架构模式：MVC、MVVM、Flux、Redux、状态管理
+- 性能架构：加载性能、运行时性能、用户体验优化
+
+**实践项目（第3-4周）**
+- 为一个复杂业务场景设计技术选型方案
+- 实现多种架构模式的对比分析与选择
+- 设计一个高性能前端应用架构
+
+**推荐资源**
+- [前端技术选型指南](https://github.com/alex/what-happens-when)
+- [前端架构模式](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
+- [Web性能优化](https://developers.google.com/web/fundamentals/performance)
+
+**评估标准**
+- [ ] 能够制定科学的技术选型决策流程
+- [ ] 针对不同场景选择合适的架构模式
+- [ ] 设计一个高性能、高可用的前端应用架构
+
+#### 第6个月：复杂业务架构解决方案
+
+**理论学习（第1-2周）**
+- 大型前端应用架构：模块化、组件化、设计模式
+- 数据流架构：单向数据流、状态管理、数据同步
+- 实时应用架构：WebSocket、Server-Sent Events、数据推送
+
+**实践项目（第3-4周）**
+- 设计一个大型数据可视化平台的架构方案
+- 实现一个实时协作系统的前端架构
+- 解决现有复杂业务场景的架构问题
+
+**推荐资源**
+- [大型前端应用架构](https://github.com/yangshun/front-end-interview-handbook)
+- [数据可视化架构](https://github.com/d3/d3)
+- [实时Web应用](https://github.com/sockjs/sockjs-client)
+
+**评估标准**
+- [ ] 能够设计大型复杂业务的前端架构
+- [ ] 实现一个实时协作系统架构
+- [ ] 解决现有复杂业务场景的架构挑战
+
+## 第三阶段：工程化实践提升（7-9个月）
+
+### 学习目标
+- 构建完整的前端工程化体系
+- 提升代码质量与测试能力
+- 掌握前端效能提升与DevOps实践
+
+### 学习内容与计划
+
+#### 第7个月：前端工程化体系
+
+**理论学习（第1-2周）**
+- 前端工程化：构建工具、脚手架、自动化流程
+- 模块化方案：CommonJS、AMD、ES Modules、包管理
+- 代码规范：ESLint、Prettier、Stylelint、Git Hooks
+
+**实践项目（第3-4周）**
+- 构建一个企业级前端脚手架工具
+- 设计一个完整的前端工程化解决方案
+- 优化现有项目的工程化配置
+
+**推荐资源**
+- [前端工程化实践](https://github.com/fi3ework/blog)
+- [Webpack深入浅出](https://webpack.js.org/concepts/)
+- [前端工程化知识体系](https://github.com/woai3c/frontend-development-knowledge)
+
+**评估标准**
+- [ ] 能够构建完整的前端工程化体系
+- [ ] 实现一个企业级前端脚手架
+- [ ] 优化现有项目工程化配置，开发效率提升30%
+
+#### 第8个月：代码质量与测试
+
+**理论学习（第1-2周）**
+- 前端测试：单元测试、集成测试、端到端测试
+- 代码质量：静态分析、代码审查、重构技巧
+- 测试策略：测试金字塔、测试驱动开发、行为驱动开发
+
+**实践项目（第3-4周）**
+- 为现有项目添加完整的测试覆盖
+- 实现一个自动化测试与代码质量检查流程
+- 重构低质量代码，提升代码可维护性
+
+**推荐资源**
+- [前端测试指南](https://github.com/goldbergyoni/javascript-testing-best-practices)
+- [代码质量工具](https://github.com/analysis-tools-dev/static-analysis)
+- [重构技巧](https://refactoring.com/)
+
+**评估标准**
+- [ ] 能够设计完整的前端测试策略
+- [ ] 实现测试覆盖率达到80%以上
+- [ ] 重构低质量代码，代码质量指标提升50%
+
+#### 第9个月：前端效能提升与DevOps
+
+**理论学习（第1-2周）**
+- 前端DevOps：CI/CD、自动化部署、监控告警
+- 性能监控：性能指标、监控工具、优化策略
+- 前端监控：错误监控、用户行为分析、业务指标
+
+**实践项目（第3-4周）**
+- 搭建前端CI/CD流程，实现自动化部署
+- 实现一个完整的前端性能监控系统
+- 设计前端业务指标监控与分析方案
+
+**推荐资源**
+- [前端DevOps实践](https://github.com/k88hudson/git-flight-rules)
+- [Web性能监控](https://github.com/GoogleChrome/lighthouse)
+- [前端监控方案](https://github.com/getsentry/sentry)
+
+**评估标准**
+- [ ] 能够搭建完整的前端CI/CD流程
+- [ ] 实现一个前端性能监控系统
+- [ ] 设计前端业务指标监控方案，问题发现时间缩短50%
+
+## 第四阶段：团队协作与技术管理（10-12个月）
+
+### 学习目标
+- 提升技术领导力与团队协作能力
+- 掌握技术规划与知识传承方法
+- 培养技术决策与团队管理能力
+
+### 学习内容与计划
+
+#### 第10个月：技术领导力与团队协作
+
+**理论学习（第1-2周）**
+- 技术领导力：技术决策、团队指导、技术影响力
+- 团队协作：敏捷开发、代码评审、技术分享
+- 沟通技巧：技术方案讲解、跨团队协作、冲突解决
+
+**实践项目（第3-4周）**
+- 主导一个技术方案的制定与实施
+- 建立团队代码评审与技术分享机制
+- 解决团队协作中的技术难题
+
+**推荐资源**
+- [技术领导力](https://github.com/alex/tech-lead-book)
+- [敏捷开发实践](https://agilemanifesto.org/iso/zhchs/manifesto.html)
+- [代码评审指南](https://google.github.io/eng-practices/review/)
+
+**评估标准**
+- [ ] 能够主导复杂技术方案的制定与实施
+- [ ] 建立有效的团队技术协作机制
+- [ ] 提升团队技术氛围与协作效率
+
+#### 第11个月：技术规划与知识传承
+
+**理论学习（第1-2周）**
+- 技术规划：技术路线图、技术预研、技术债务管理
+- 知识传承：技术文档、最佳实践、培训体系
+- 团队成长：技能矩阵、职业规划、激励机制
+
+**实践项目（第3-4周）**
+- 制定团队技术发展路线图
+- 建立团队知识库与最佳实践文档
+- 设计团队成员成长计划
+
+**推荐资源**
+- [技术规划方法](https://www.oreilly.com/library/view/technology-strategy-pattern/9781492047745/)
+- [知识管理实践](https://github.com/khanhnamle1994/tech-interview-handbook)
+- [团队成长指南](https://github.com/yangshun/front-end-interview-handbook)
+
+**评估标准**
+- [ ] 能够制定科学的技术发展路线图
+- [ ] 建立完整的团队知识管理体系
+- [ ] 设计有效的团队成员成长计划
+
+#### 第12个月：技术决策与团队管理
+
+**理论学习（第1-2周）**
+- 技术决策：决策框架、风险评估、方案对比
+- 团队管理：目标管理、绩效考核、团队建设
+- 技术文化：创新文化、质量文化、学习文化
+
+**实践项目（第3-4周）**
+- 主导一个重大技术决策的制定与实施
+- 优化团队管理流程与绩效考核机制
+- 建设积极向上的技术团队文化
+
+**推荐资源**
+- [技术决策框架](https://www.oreilly.com/library/view/advancing-in-studio/9781492056909/)
+- [团队管理实践](https://github.com/leandromoreira/scala-playground)
+- [技术文化建设](https://github.com/github/open-source-guide)
+
+**评估标准**
+- [ ] 能够主导重大技术决策的制定与实施
+- [ ] 优化团队管理流程，团队效能提升30%
+- [ ] 建设积极向上的技术团队文化
+
+## 学习资源汇总
+
+### 必读书籍
+1. 《JavaScript高级程序设计》第4版
+2. 《你不知道的JavaScript》系列
+3. 《架构整洁之道》
+4. 《领域驱动设计》
+5. 《重构：改善既有代码的设计》
+
+### 在线课程
+1. [前端大师课](https://frontendmasters.com/)
+2. [Coursera前端开发专项课程](https://www.coursera.org/specializations/front-end-web)
+3. [Udemy前端架构课程](https://www.udemy.com/topic/web-development/)
+
+### 技术社区
+1. [GitHub](https://github.com/)
+2. [Stack Overflow](https://stackoverflow.com/)
+3. [掘金](https://juejin.cn/)
+4. [InfoQ](https://www.infoq.cn/)
+
+### 开源项目
+1. [Vue.js](https://github.com/vuejs/vue)
+2. [React](https://github.com/facebook/react)
+3. [Webpack](https://github.com/webpack/webpack)
+4. [Babel](https://github.com/babel/babel)
+
+## 学习成果评估
+
+### 阶段性评估
+- 每月进行一次自我评估，对照评估标准检查学习成果
+- 每季度完成一个综合项目，展示所学知识的应用能力
+- 每半年进行一次技术分享，检验知识掌握与表达能力
+
+### 终极评估标准
+- 能够独立设计大型复杂前端系统的架构方案
+- 具备技术选型与决策能力，能够评估不同方案的优劣
+- 掌握前端工程化体系，能够构建高效的开发流程
+- 具备技术领导力，能够指导团队解决复杂技术问题
+- 拥有系统化的技术知识体系，能够持续学习与成长
+
+## 学习建议
+
+1. **理论与实践结合**：每学习一个知识点，立即通过实践项目巩固
+2. **输出倒逼输入**：定期撰写技术博客、参与技术分享，加深理解
+3. **构建知识网络**：将零散知识点连接成系统化的知识体系
+4. **关注行业趋势**：持续关注前端技术发展，保持技术敏感度
+5. **参与开源项目**：通过参与开源项目提升实战能力与技术影响力
+
+通过以上系统化学习路线，您将能够全面提升技术深度、架构设计能力、工程化实践和技术管理能力，成功从资深前端开发者转型为优秀的前端架构师。
+`,__viteBrowserExternal={},__viteBrowserExternal$1=Object.freeze(Object.defineProperty({__proto__:null,default:__viteBrowserExternal},Symbol.toStringTag,{value:"Module"})),require$$0=getAugmentedNamespace(__viteBrowserExternal$1);var kindOf,hasRequiredKindOf;function requireKindOf(){if(hasRequiredKindOf)return kindOf;hasRequiredKindOf=1;var i=Object.prototype.toString;kindOf=function(ee){if(ee===void 0)return"undefined";if(ee===null)return"null";var Ve=typeof ee;if(Ve==="boolean")return"boolean";if(Ve==="string")return"string";if(Ve==="number")return"number";if(Ve==="symbol")return"symbol";if(Ve==="function")return g(ee)?"generatorfunction":"function";if(o(ee))return"array";if(R(ee))return"buffer";if(h(ee))return"arguments";if(c(ee))return"date";if(s(ee))return"error";if(p(ee))return"regexp";switch(a(ee)){case"Symbol":return"symbol";case"Promise":return"promise";case"WeakMap":return"weakmap";case"WeakSet":return"weakset";case"Map":return"map";case"Set":return"set";case"Int8Array":return"int8array";case"Uint8Array":return"uint8array";case"Uint8ClampedArray":return"uint8clampedarray";case"Int16Array":return"int16array";case"Uint16Array":return"uint16array";case"Int32Array":return"int32array";case"Uint32Array":return"uint32array";case"Float32Array":return"float32array";case"Float64Array":return"float64array"}if(f(ee))return"generator";switch(Ve=i.call(ee),Ve){case"[object Object]":return"object";case"[object Map Iterator]":return"mapiterator";case"[object Set Iterator]":return"setiterator";case"[object String Iterator]":return"stringiterator";case"[object Array Iterator]":return"arrayiterator"}return Ve.slice(8,-1).toLowerCase().replace(/\s/g,"")};function a(V){return typeof V.constructor=="function"?V.constructor.name:null}function o(V){return Array.isArray?Array.isArray(V):V instanceof Array}function s(V){return V instanceof Error||typeof V.message=="string"&&V.constructor&&typeof V.constructor.stackTraceLimit=="number"}function c(V){return V instanceof Date?!0:typeof V.toDateString=="function"&&typeof V.getDate=="function"&&typeof V.setDate=="function"}function p(V){return V instanceof RegExp?!0:typeof V.flags=="string"&&typeof V.ignoreCase=="boolean"&&typeof V.multiline=="boolean"&&typeof V.global=="boolean"}function g(V,ee){return a(V)==="GeneratorFunction"}function f(V){return typeof V.throw=="function"&&typeof V.return=="function"&&typeof V.next=="function"}function h(V){try{if(typeof V.length=="number"&&typeof V.callee=="function")return!0}catch(ee){if(ee.message.indexOf("callee")!==-1)return!0}return!1}function R(V){return V.constructor&&typeof V.constructor.isBuffer=="function"?V.constructor.isBuffer(V):!1}return kindOf}var isExtendable,hasRequiredIsExtendable;function requireIsExtendable(){return hasRequiredIsExtendable||(hasRequiredIsExtendable=1,isExtendable=function(a){return typeof a<"u"&&a!==null&&(typeof a=="object"||typeof a=="function")}),isExtendable}var extendShallow,hasRequiredExtendShallow;function requireExtendShallow(){if(hasRequiredExtendShallow)return extendShallow;hasRequiredExtendShallow=1;var i=requireIsExtendable();extendShallow=function(c){i(c)||(c={});for(var p=arguments.length,g=1;g<p;g++){var f=arguments[g];i(f)&&a(c,f)}return c};function a(s,c){for(var p in c)o(c,p)&&(s[p]=c[p])}function o(s,c){return Object.prototype.hasOwnProperty.call(s,c)}return extendShallow}var sectionMatter,hasRequiredSectionMatter;function requireSectionMatter(){if(hasRequiredSectionMatter)return sectionMatter;hasRequiredSectionMatter=1;var i=requireKindOf(),a=requireExtendShallow();sectionMatter=function(h,R){typeof R=="function"&&(R={parse:R});var V=s(h),ee={section_delimiter:"---",parse:g},Ve=a({},ee,R),at=Ve.section_delimiter,nt=V.content.split(/\r?\n/),it=null,ot=p(),_t=[],pt=[];function mt(zt){V.content=zt,it=[],_t=[]}function Ot(zt){pt.length&&(ot.key=c(pt[0],at),ot.content=zt,Ve.parse(ot,it),it.push(ot),ot=p(),_t=[],pt=[])}for(var Ct=0;Ct<nt.length;Ct++){var It=nt[Ct],Pt=pt.length,Ft=It.trim();if(o(Ft,at)){if(Ft.length===3&&Ct!==0){if(Pt===0||Pt===2){_t.push(It);continue}pt.push(Ft),ot.data=_t.join(`
 `),_t=[];continue}it===null&&mt(_t.join(`
 `)),Pt===2&&Ot(_t.join(`
 `)),pt.push(Ft);continue}_t.push(It)}return it===null?mt(_t.join(`
@@ -441,7 +817,7 @@ return `+str.trim()+`;
 `?c+`
 `:c}return stringify}var excerpt,hasRequiredExcerpt;function requireExcerpt(){if(hasRequiredExcerpt)return excerpt;hasRequiredExcerpt=1;const i=requireDefaults();return excerpt=function(a,o){const s=i(o);if(a.data==null&&(a.data={}),typeof s.excerpt=="function")return s.excerpt(a,s);const c=a.data.excerpt_separator||s.excerpt_separator;if(c==null&&(s.excerpt===!1||s.excerpt==null))return a;const p=typeof s.excerpt=="string"?s.excerpt:c||s.delimiters[0],g=a.content.indexOf(p);return g!==-1&&(a.excerpt=a.content.slice(0,g)),a},excerpt}var toFile,hasRequiredToFile;function requireToFile(){if(hasRequiredToFile)return toFile;hasRequiredToFile=1;const i=requireKindOf(),a=requireStringify(),o=requireUtils();return toFile=function(s){return i(s)!=="object"&&(s={content:s}),i(s.data)!=="object"&&(s.data={}),s.contents&&s.content==null&&(s.content=s.contents),o.define(s,"orig",o.toBuffer(s.content)),o.define(s,"language",s.language||""),o.define(s,"matter",s.matter||""),o.define(s,"stringify",function(c,p){return p&&p.language&&(s.language=p.language),a(s,c,p)}),s.content=o.toString(s.content),s.isEmpty=!1,s.excerpt="",s},toFile}var parse,hasRequiredParse;function requireParse(){if(hasRequiredParse)return parse;hasRequiredParse=1;const i=requireEngine(),a=requireDefaults();return parse=function(o,s,c){const p=a(c),g=i(o,p);if(typeof g.parse!="function")throw new TypeError('expected "'+o+'.parse" to be a function');return g.parse(s,p)},parse}var grayMatter,hasRequiredGrayMatter;function requireGrayMatter(){if(hasRequiredGrayMatter)return grayMatter;hasRequiredGrayMatter=1;const i=require$$0,a=requireSectionMatter(),o=requireDefaults(),s=requireStringify(),c=requireExcerpt(),p=requireEngines(),g=requireToFile(),f=requireParse(),h=requireUtils();function R(ee,Ve){if(ee==="")return{data:{},content:ee,excerpt:"",orig:ee};let at=g(ee);const nt=R.cache[at.content];if(!Ve){if(nt)return at=Object.assign({},nt),at.orig=nt.orig,at;R.cache[at.content]=at}return V(at,Ve)}function V(ee,Ve){const at=o(Ve),nt=at.delimiters[0],it=`
 `+at.delimiters[1];let ot=ee.content;at.language&&(ee.language=at.language);const _t=nt.length;if(!h.startsWith(ot,nt,_t))return c(ee,at),ee;if(ot.charAt(_t)===nt.slice(-1))return ee;ot=ot.slice(_t);const pt=ot.length,mt=R.language(ot,at);mt.name&&(ee.language=mt.name,ot=ot.slice(mt.raw.length));let Ot=ot.indexOf(it);return Ot===-1&&(Ot=pt),ee.matter=ot.slice(0,Ot),ee.matter.replace(/^\s*#[^\n]+/gm,"").trim()===""?(ee.isEmpty=!0,ee.empty=ee.content,ee.data={}):ee.data=f(ee.language,ee.matter,at),Ot===pt?ee.content="":(ee.content=ot.slice(Ot+it.length),ee.content[0]==="\r"&&(ee.content=ee.content.slice(1)),ee.content[0]===`
-`&&(ee.content=ee.content.slice(1))),c(ee,at),(at.sections===!0||typeof at.section=="function")&&a(ee,at.section),ee}return R.engines=p,R.stringify=function(ee,Ve,at){return typeof ee=="string"&&(ee=R(ee,at)),s(ee,Ve,at)},R.read=function(ee,Ve){const at=i.readFileSync(ee,"utf8"),nt=R(at,Ve);return nt.path=ee,nt},R.test=function(ee,Ve){return h.startsWith(ee,o(Ve).delimiters[0])},R.language=function(ee,Ve){const nt=o(Ve).delimiters[0];R.test(ee)&&(ee=ee.slice(nt.length));const it=ee.slice(0,ee.search(/\r?\n/));return{raw:it,name:it?it.trim():""}},R.cache={},R.clearCache=function(){R.cache={}},grayMatter=R,grayMatter}var grayMatterExports=requireGrayMatter();const matter=getDefaultExportFromCjs(grayMatterExports),posts=Object.assign({"../../_posts/01.md":__vite_glob_0_0,"../../_posts/02.md":__vite_glob_0_1,"../../_posts/03.md":__vite_glob_0_2,"../../_posts/04.md":__vite_glob_0_3}),getAllPosts=()=>Object.entries(posts).map(([a,o])=>{const s=a.replace(/^\.\.\/\.\.\/_posts\//,"").replace(/\.md$/,""),c=o,{data:p,content:g}=matter(c);return{slug:s,title:p.title||"Untitled Post",date:p.date||new Date().toISOString(),coverImage:p.coverImage||"",author:p.author||{name:"Anonymous",picture:""},excerpt:p.excerpt||"",ogImage:p.ogImage||{url:""},content:g}}).sort((a,o)=>a.date>o.date?-1:1),getPostBySlug=i=>getAllPosts().find(o=>o.slug===i);function L(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var T=L();function Z(i){T=i}var C={exec:()=>null};function k(i,a=""){let o=typeof i=="string"?i:i.source,s={replace:(c,p)=>{let g=typeof p=="string"?p:p.source;return g=g.replace(m.caret,"$1"),o=o.replace(c,g),s},getRegex:()=>new RegExp(o,a)};return s}var me=(()=>{try{return!!new RegExp("(?<=1)(?<!1)")}catch{return!1}})(),m={codeRemoveIndent:/^(?: {1,4}| {0,3}\t)/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceTabs:/^\t+/,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] +\S/,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,unescapeTest:/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:i=>new RegExp(`^( {0,3}${i})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`),hrRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`),fencesBeginRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}(?:\`\`\`|~~~)`),headingBeginRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}#`),htmlBeginRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}<(?:[a-z].*>|!--)`,"i")},xe=/^(?:[ \t]*(?:\n|$))+/,be=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,Re=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,I=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,Te=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,N=/(?:[*+-]|\d{1,9}[.)])/,re=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |blockCode|fences|blockquote|heading|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,se=k(re).replace(/bull/g,N).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,"").getRegex(),Oe=k(re).replace(/bull/g,N).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),Q=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,we=/^[^\n]+/,F=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,ye=k(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace("label",F).replace("title",/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),Pe=k(/^( {0,3}bull)([ \t][^\n]+?)?(?:\n|$)/).replace(/bull/g,N).getRegex(),v="address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",j=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,Se=k("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))","i").replace("comment",j).replace("tag",v).replace("attribute",/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),ie=k(Q).replace("hr",I).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("|table","").replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),$e=k(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph",ie).getRegex(),U={blockquote:$e,code:be,def:ye,fences:Re,heading:Te,hr:I,html:Se,lheading:se,list:Pe,newline:xe,paragraph:ie,table:C,text:we},te=k("^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)").replace("hr",I).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("blockquote"," {0,3}>").replace("code","(?: {4}| {0,3}	)[^\\n]").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),_e={...U,lheading:Oe,table:te,paragraph:k(Q).replace("hr",I).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("table",te).replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex()},Le={...U,html:k(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace("comment",j).replace(/tag/g,"(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:C,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:k(Q).replace("hr",I).replace("heading",` *#{1,6} *[^
+`&&(ee.content=ee.content.slice(1))),c(ee,at),(at.sections===!0||typeof at.section=="function")&&a(ee,at.section),ee}return R.engines=p,R.stringify=function(ee,Ve,at){return typeof ee=="string"&&(ee=R(ee,at)),s(ee,Ve,at)},R.read=function(ee,Ve){const at=i.readFileSync(ee,"utf8"),nt=R(at,Ve);return nt.path=ee,nt},R.test=function(ee,Ve){return h.startsWith(ee,o(Ve).delimiters[0])},R.language=function(ee,Ve){const nt=o(Ve).delimiters[0];R.test(ee)&&(ee=ee.slice(nt.length));const it=ee.slice(0,ee.search(/\r?\n/));return{raw:it,name:it?it.trim():""}},R.cache={},R.clearCache=function(){R.cache={}},grayMatter=R,grayMatter}var grayMatterExports=requireGrayMatter();const matter=getDefaultExportFromCjs(grayMatterExports),posts=Object.assign({"../../_posts/01.md":__vite_glob_0_0,"../../_posts/02.md":__vite_glob_0_1,"../../_posts/03.md":__vite_glob_0_2,"../../_posts/04.md":__vite_glob_0_3,"../../_posts/05.md":__vite_glob_0_4}),getAllPosts=()=>Object.entries(posts).map(([a,o])=>{const s=a.replace(/^\.\.\/\.\.\/_posts\//,"").replace(/\.md$/,""),c=o,{data:p,content:g}=matter(c);return{slug:s,title:p.title||"Untitled Post",date:p.date||new Date().toISOString(),coverImage:p.coverImage||"",author:p.author||{name:"Anonymous",picture:""},excerpt:p.excerpt||"",ogImage:p.ogImage||{url:""},content:g}}).sort((a,o)=>a.date>o.date?-1:1),getPostBySlug=i=>getAllPosts().find(o=>o.slug===i);function L(){return{async:!1,breaks:!1,extensions:null,gfm:!0,hooks:null,pedantic:!1,renderer:null,silent:!1,tokenizer:null,walkTokens:null}}var T=L();function Z(i){T=i}var C={exec:()=>null};function k(i,a=""){let o=typeof i=="string"?i:i.source,s={replace:(c,p)=>{let g=typeof p=="string"?p:p.source;return g=g.replace(m.caret,"$1"),o=o.replace(c,g),s},getRegex:()=>new RegExp(o,a)};return s}var me=(()=>{try{return!!new RegExp("(?<=1)(?<!1)")}catch{return!1}})(),m={codeRemoveIndent:/^(?: {1,4}| {0,3}\t)/gm,outputLinkReplace:/\\([\[\]])/g,indentCodeCompensation:/^(\s+)(?:```)/,beginningSpace:/^\s+/,endingHash:/#$/,startingSpaceChar:/^ /,endingSpaceChar:/ $/,nonSpaceChar:/[^ ]/,newLineCharGlobal:/\n/g,tabCharGlobal:/\t/g,multipleSpaceGlobal:/\s+/g,blankLine:/^[ \t]*$/,doubleBlankLine:/\n[ \t]*\n[ \t]*$/,blockquoteStart:/^ {0,3}>/,blockquoteSetextReplace:/\n {0,3}((?:=+|-+) *)(?=\n|$)/g,blockquoteSetextReplace2:/^ {0,3}>[ \t]?/gm,listReplaceTabs:/^\t+/,listReplaceNesting:/^ {1,4}(?=( {4})*[^ ])/g,listIsTask:/^\[[ xX]\] +\S/,listReplaceTask:/^\[[ xX]\] +/,listTaskCheckbox:/\[[ xX]\]/,anyLine:/\n.*\n/,hrefBrackets:/^<(.*)>$/,tableDelimiter:/[:|]/,tableAlignChars:/^\||\| *$/g,tableRowBlankLine:/\n[ \t]*$/,tableAlignRight:/^ *-+: *$/,tableAlignCenter:/^ *:-+: *$/,tableAlignLeft:/^ *:-+ *$/,startATag:/^<a /i,endATag:/^<\/a>/i,startPreScriptTag:/^<(pre|code|kbd|script)(\s|>)/i,endPreScriptTag:/^<\/(pre|code|kbd|script)(\s|>)/i,startAngleBracket:/^</,endAngleBracket:/>$/,pedanticHrefTitle:/^([^'"]*[^\s])\s+(['"])(.*)\2/,unicodeAlphaNumeric:/[\p{L}\p{N}]/u,escapeTest:/[&<>"']/,escapeReplace:/[&<>"']/g,escapeTestNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,escapeReplaceNoEncode:/[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/g,unescapeTest:/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig,caret:/(^|[^\[])\^/g,percentDecode:/%25/g,findPipe:/\|/g,splitPipe:/ \|/,slashPipe:/\\\|/g,carriageReturn:/\r\n|\r/g,spaceLine:/^ +$/gm,notSpaceStart:/^\S*/,endingNewline:/\n$/,listItemRegex:i=>new RegExp(`^( {0,3}${i})((?:[	 ][^\\n]*)?(?:\\n|$))`),nextBulletRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ 	][^\\n]*)?(?:\\n|$))`),hrRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`),fencesBeginRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}(?:\`\`\`|~~~)`),headingBeginRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}#`),htmlBeginRegex:i=>new RegExp(`^ {0,${Math.min(3,i-1)}}<(?:[a-z].*>|!--)`,"i")},xe=/^(?:[ \t]*(?:\n|$))+/,be=/^((?: {4}| {0,3}\t)[^\n]+(?:\n(?:[ \t]*(?:\n|$))*)?)+/,Re=/^ {0,3}(`{3,}(?=[^`\n]*(?:\n|$))|~{3,})([^\n]*)(?:\n|$)(?:|([\s\S]*?)(?:\n|$))(?: {0,3}\1[~`]* *(?=\n|$)|$)/,I=/^ {0,3}((?:-[\t ]*){3,}|(?:_[ \t]*){3,}|(?:\*[ \t]*){3,})(?:\n+|$)/,Te=/^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,N=/(?:[*+-]|\d{1,9}[.)])/,re=/^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |blockCode|fences|blockquote|heading|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,se=k(re).replace(/bull/g,N).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/\|table/g,"").getRegex(),Oe=k(re).replace(/bull/g,N).replace(/blockCode/g,/(?: {4}| {0,3}\t)/).replace(/fences/g,/ {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g,/ {0,3}>/).replace(/heading/g,/ {0,3}#{1,6}/).replace(/html/g,/ {0,3}<[^\n>]+>\n/).replace(/table/g,/ {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),Q=/^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,we=/^[^\n]+/,F=/(?!\s*\])(?:\\[\s\S]|[^\[\]\\])+/,ye=k(/^ {0,3}\[(label)\]: *(?:\n[ \t]*)?([^<\s][^\s]*|<.*?>)(?:(?: +(?:\n[ \t]*)?| *\n[ \t]*)(title))? *(?:\n+|$)/).replace("label",F).replace("title",/(?:"(?:\\"?|[^"\\])*"|'[^'\n]*(?:\n[^'\n]+)*\n?'|\([^()]*\))/).getRegex(),Pe=k(/^( {0,3}bull)([ \t][^\n]+?)?(?:\n|$)/).replace(/bull/g,N).getRegex(),v="address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",j=/<!--(?:-?>|[\s\S]*?(?:-->|$))/,Se=k("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))","i").replace("comment",j).replace("tag",v).replace("attribute",/ +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),ie=k(Q).replace("hr",I).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("|table","").replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),$e=k(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph",ie).getRegex(),U={blockquote:$e,code:be,def:ye,fences:Re,heading:Te,hr:I,html:Se,lheading:se,list:Pe,newline:xe,paragraph:ie,table:C,text:we},te=k("^ *([^\\n ].*)\\n {0,3}((?:\\| *)?:?-+:? *(?:\\| *:?-+:? *)*(?:\\| *)?)(?:\\n((?:(?! *\\n|hr|heading|blockquote|code|fences|list|html).*(?:\\n|$))*)\\n*|$)").replace("hr",I).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("blockquote"," {0,3}>").replace("code","(?: {4}| {0,3}	)[^\\n]").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex(),_e={...U,lheading:Oe,table:te,paragraph:k(Q).replace("hr",I).replace("heading"," {0,3}#{1,6}(?:\\s|$)").replace("|lheading","").replace("table",te).replace("blockquote"," {0,3}>").replace("fences"," {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list"," {0,3}(?:[*+-]|1[.)]) ").replace("html","</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag",v).getRegex()},Le={...U,html:k(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace("comment",j).replace(/tag/g,"(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),def:/^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,heading:/^(#{1,6})(.*)(?:\n+|$)/,fences:C,lheading:/^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,paragraph:k(Q).replace("hr",I).replace("heading",` *#{1,6} *[^
 ]`).replace("lheading",se).replace("|table","").replace("blockquote"," {0,3}>").replace("|fences","").replace("|list","").replace("|html","").replace("|tag","").getRegex()},Me=/^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,ze=/^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,oe=/^( {2,}|\\)\n(?!\s*$)/,Ae=/^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,D=/[\p{P}\p{S}]/u,K=/[\s\p{P}\p{S}]/u,ae=/[^\s\p{P}\p{S}]/u,Ce=k(/^((?![*_])punctSpace)/,"u").replace(/punctSpace/g,K).getRegex(),le=/(?!~)[\p{P}\p{S}]/u,Ie=/(?!~)[\s\p{P}\p{S}]/u,Ee=/(?:[^\s\p{P}\p{S}]|~)/u,Be=k(/link|precode-code|html/,"g").replace("link",/\[(?:[^\[\]`]|(?<a>`+)[^`]+\k<a>(?!`))*?\]\((?:\\[\s\S]|[^\\\(\)]|\((?:\\[\s\S]|[^\\\(\)])*\))*\)/).replace("precode-",me?"(?<!`)()":"(^^|[^`])").replace("code",/(?<b>`+)[^`]+\k<b>(?!`)/).replace("html",/<(?! )[^<>]*?>/).getRegex(),ue=/^(?:\*+(?:((?!\*)punct)|[^\s*]))|^_+(?:((?!_)punct)|([^\s_]))/,qe=k(ue,"u").replace(/punct/g,D).getRegex(),ve=k(ue,"u").replace(/punct/g,le).getRegex(),pe="^[^_*]*?__[^_*]*?\\*[^_*]*?(?=__)|[^*]+(?=[^*])|(?!\\*)punct(\\*+)(?=[\\s]|$)|notPunctSpace(\\*+)(?!\\*)(?=punctSpace|$)|(?!\\*)punctSpace(\\*+)(?=notPunctSpace)|[\\s](\\*+)(?!\\*)(?=punct)|(?!\\*)punct(\\*+)(?!\\*)(?=punct)|notPunctSpace(\\*+)(?=notPunctSpace)",De=k(pe,"gu").replace(/notPunctSpace/g,ae).replace(/punctSpace/g,K).replace(/punct/g,D).getRegex(),He=k(pe,"gu").replace(/notPunctSpace/g,Ee).replace(/punctSpace/g,Ie).replace(/punct/g,le).getRegex(),Ze=k("^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)punctSpace(_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)","gu").replace(/notPunctSpace/g,ae).replace(/punctSpace/g,K).replace(/punct/g,D).getRegex(),Ge=k(/\\(punct)/,"gu").replace(/punct/g,D).getRegex(),Ne=k(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme",/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email",/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),Qe=k(j).replace("(?:-->|$)","-->").getRegex(),Fe=k("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment",Qe).replace("attribute",/\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),q=/(?:\[(?:\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+[^`]*?`+(?!`)|[^\[\]\\`])*?/,je=k(/^!?\[(label)\]\(\s*(href)(?:(?:[ \t]*(?:\n[ \t]*)?)(title))?\s*\)/).replace("label",q).replace("href",/<(?:\\.|[^\n<>\\])+>|[^ \t\n\x00-\x1f]*/).replace("title",/"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),ce=k(/^!?\[(label)\]\[(ref)\]/).replace("label",q).replace("ref",F).getRegex(),he=k(/^!?\[(ref)\](?:\[\])?/).replace("ref",F).getRegex(),Ue=k("reflink|nolink(?!\\()","g").replace("reflink",ce).replace("nolink",he).getRegex(),ne=/[hH][tT][tT][pP][sS]?|[fF][tT][pP]/,W={_backpedal:C,anyPunctuation:Ge,autolink:Ne,blockSkip:Be,br:oe,code:ze,del:C,emStrongLDelim:qe,emStrongRDelimAst:De,emStrongRDelimUnd:Ze,escape:Me,link:je,nolink:he,punctuation:Ce,reflink:ce,reflinkSearch:Ue,tag:Fe,text:Ae,url:C},Ke={...W,link:k(/^!?\[(label)\]\((.*?)\)/).replace("label",q).getRegex(),reflink:k(/^!?\[(label)\]\s*\[([^\]]*)\]/).replace("label",q).getRegex()},G={...W,emStrongRDelimAst:He,emStrongLDelim:ve,url:k(/^((?:protocol):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace("protocol",ne).replace("email",/[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/).getRegex(),_backpedal:/(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,del:/^(~~?)(?=[^\s~])((?:\\[\s\S]|[^\\])*?(?:\\[\s\S]|[^\s~\\]))\1(?=[^~]|$)/,text:k(/^([`~]+|[^`~])(?:(?= {2,}\n)|(?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)|[\s\S]*?(?:(?=[\\<!\[`*~_]|\b_|protocol:\/\/|www\.|$)|[^ ](?= {2,}\n)|[^a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-](?=[a-zA-Z0-9.!#$%&'*+\/=?_`{\|}~-]+@)))/).replace("protocol",ne).getRegex()},We={...G,br:k(oe).replace("{2,}","*").getRegex(),text:k(G.text).replace("\\b_","\\b_| {2,}\\n").replace(/\{2,\}/g,"*").getRegex()},E={normal:U,gfm:_e,pedantic:Le},M={normal:W,gfm:G,breaks:We,pedantic:Ke},Xe={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"},ke=i=>Xe[i];function w(i,a){if(a){if(m.escapeTest.test(i))return i.replace(m.escapeReplace,ke)}else if(m.escapeTestNoEncode.test(i))return i.replace(m.escapeReplaceNoEncode,ke);return i}function X(i){try{i=encodeURI(i).replace(m.percentDecode,"%")}catch{return null}return i}function J(i,a){let o=i.replace(m.findPipe,(p,g,f)=>{let h=!1,R=g;for(;--R>=0&&f[R]==="\\";)h=!h;return h?"|":" |"}),s=o.split(m.splitPipe),c=0;if(s[0].trim()||s.shift(),s.length>0&&!s.at(-1)?.trim()&&s.pop(),a)if(s.length>a)s.splice(a);else for(;s.length<a;)s.push("");for(;c<s.length;c++)s[c]=s[c].trim().replace(m.slashPipe,"|");return s}function z(i,a,o){let s=i.length;if(s===0)return"";let c=0;for(;c<s&&i.charAt(s-c-1)===a;)c++;return i.slice(0,s-c)}function de(i,a){if(i.indexOf(a[1])===-1)return-1;let o=0;for(let s=0;s<i.length;s++)if(i[s]==="\\")s++;else if(i[s]===a[0])o++;else if(i[s]===a[1]&&(o--,o<0))return s;return o>0?-2:-1}function ge(i,a,o,s,c){let p=a.href,g=a.title||null,f=i[1].replace(c.other.outputLinkReplace,"$1");s.state.inLink=!0;let h={type:i[0].charAt(0)==="!"?"image":"link",raw:o,href:p,title:g,text:f,tokens:s.inlineTokens(f)};return s.state.inLink=!1,h}function Je(i,a,o){let s=i.match(o.other.indentCodeCompensation);if(s===null)return a;let c=s[1];return a.split(`
 `).map(p=>{let g=p.match(o.other.beginningSpace);if(g===null)return p;let[f]=g;return f.length>=c.length?p.slice(c.length):p}).join(`
 `)}var y=class{options;rules;lexer;constructor(i){this.options=i||T}space(i){let a=this.rules.block.newline.exec(i);if(a&&a[0].length>0)return{type:"space",raw:a[0]}}code(i){let a=this.rules.block.code.exec(i);if(a){let o=a[0].replace(this.rules.other.codeRemoveIndent,"");return{type:"code",raw:a[0],codeBlockStyle:"indented",text:this.options.pedantic?o:z(o,`
