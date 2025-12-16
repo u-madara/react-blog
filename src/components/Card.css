@@ -1,0 +1,258 @@
+/* 卡片组件样式 */
+.card {
+  background-color: var(--color-background);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 卡片内边距 */
+.card-padding-none {
+  padding: 0;
+}
+
+.card-padding-sm {
+  padding: var(--space-4);
+}
+
+.card-padding-md {
+  padding: var(--space-6);
+}
+
+.card-padding-lg {
+  padding: var(--space-8);
+}
+
+/* 卡片阴影 */
+.card-shadow-none {
+  box-shadow: none;
+}
+
+.card-shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.card-shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.card-shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+.card-shadow-xl {
+  box-shadow: var(--shadow-xl);
+}
+
+/* 卡片边框 */
+.card-border {
+  border: 1px solid var(--color-border);
+}
+
+/* 卡片圆角 */
+.card-rounded-none {
+  border-radius: 0;
+}
+
+.card-rounded-sm {
+  border-radius: var(--radius-sm);
+}
+
+.card-rounded-md {
+  border-radius: var(--radius-md);
+}
+
+.card-rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.card-rounded-xl {
+  border-radius: var(--radius-xl);
+}
+
+.card-rounded-full {
+  border-radius: var(--radius-full);
+}
+
+/* 卡片悬停效果 */
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* 可点击卡片 */
+.card-clickable {
+  cursor: pointer;
+}
+
+.card-clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-clickable:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-md);
+}
+
+/* 卡片头部 */
+.card-header {
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border-light);
+  margin-bottom: var(--space-4);
+}
+
+.card-header:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* 卡片主体 */
+.card-body {
+  flex: 1;
+}
+
+/* 卡片底部 */
+.card-footer {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
+  margin-top: var(--space-4);
+}
+
+.card-footer:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* 卡片图片容器 */
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform var(--transition-base);
+}
+
+.card-hover:hover .card-image {
+  transform: scale(1.02);
+}
+
+/* 卡片标题 */
+.card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.card-title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.card-title a:hover {
+  color: var(--color-primary-600);
+}
+
+/* 卡片描述 */
+.card-description {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+/* 卡片元数据 */
+.card-meta {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  gap: var(--space-4);
+}
+
+.card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* 卡片标签 */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.card-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-700);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.card-tag:hover {
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-900);
+}
+
+/* 卡片操作按钮 */
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+/* 响应式卡片网格 */
+.card-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.card-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.card-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .card-grid-cols-2,
+  .card-grid-cols-3,
+  .card-grid-cols-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .card-grid-cols-3,
+  .card-grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-grid-cols-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

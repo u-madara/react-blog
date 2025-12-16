@@ -1,0 +1,120 @@
+/* Toast通知组件样式 */
+.toast {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  min-width: 300px;
+  max-width: 500px;
+  transform: translateX(0);
+  opacity: 1;
+  transition: all var(--transition-base);
+}
+
+.toast-leaving {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Toast图标 */
+.toast-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-text-primary);
+}
+
+/* Toast消息 */
+.toast-message {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+}
+
+/* Toast关闭按钮 */
+.toast-close {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: var(--space-1);
+  margin: -var(--space-1);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.toast-close:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-text-primary);
+}
+
+/* Toast类型样式 */
+.toast-success {
+  border-left: 4px solid var(--color-success);
+}
+
+.toast-success .toast-icon {
+  color: var(--color-success);
+}
+
+.toast-error {
+  border-left: 4px solid var(--color-error);
+}
+
+.toast-error .toast-icon {
+  color: var(--color-error);
+}
+
+.toast-warning {
+  border-left: 4px solid var(--color-warning);
+}
+
+.toast-warning .toast-icon {
+  color: var(--color-warning);
+}
+
+.toast-info {
+  border-left: 4px solid var(--color-primary-500);
+}
+
+.toast-info .toast-icon {
+  color: var(--color-primary-500);
+}
+
+/* Toast容器 */
+.toast-container {
+  position: fixed;
+  top: var(--space-20);
+  right: var(--space-4);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  pointer-events: none;
+}
+
+.toast-container .toast {
+  pointer-events: auto;
+}
+
+/* 响应式调整 */
+@media (max-width: 640px) {
+  .toast {
+    min-width: auto;
+    max-width: calc(100vw - var(--space-8));
+    left: var(--space-4);
+    right: var(--space-4);
+  }
+  
+  .toast-container {
+    top: var(--space-16);
+    left: 0;
+    right: 0;
+    padding: 0 var(--space-4);
+  }
+}

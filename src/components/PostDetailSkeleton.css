@@ -1,0 +1,77 @@
+/* 文章详情页骨架屏样式 */
+.post-detail-skeleton {
+  padding: var(--spacing-lg);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-detail-skeleton-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.post-detail-skeleton-title {
+  margin-bottom: var(--spacing-md);
+}
+
+.post-detail-skeleton-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.post-detail-skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.post-detail-skeleton-paragraph {
+  margin-bottom: var(--spacing-md);
+}
+
+.post-detail-skeleton-image {
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.post-detail-skeleton-subtitle {
+  margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+}
+
+.post-detail-skeleton-code {
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.post-detail-skeleton-list {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-lg);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .post-detail-skeleton {
+    padding: var(--spacing-md);
+  }
+  
+  .post-detail-skeleton-title {
+    height: 2em !important;
+    width: 100% !important;
+  }
+  
+  .post-detail-skeleton-meta {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .post-detail-skeleton-image {
+    height: 200px !important;
+  }
+  
+  .post-detail-skeleton-code {
+    height: 120px !important;
+  }
+}

@@ -5,16 +5,29 @@ import 'highlight.js/styles/github.css';
 
 // 配置marked，添加highlight插件
 marked.use({
-  extensions: [],
   gfm: true,
-  breaks: true
+  breaks: true,
+  // 确保不会执行代码块中的JavaScript
+  sanitize: true,
+  // 设置为false以避免自动链接
+  smartLists: true,
+  smartypants: true
 });
 
 // 使用marked的renderer来处理代码高亮
 const renderer = new marked.Renderer();
 renderer.code = function({ text, lang }: { text: string; lang?: string }) {
+  // 处理代码块中的环境变量引用
+  const processedText = text.replace(
+    /process\.env\.NODE_ENV/g,
+    "'development'"
+  ).replace(
+    /process\.env\.\w+/g,
+    "undefined"
+  );
+  
   const language = lang && hljs.getLanguage(lang) ? lang : 'plaintext';
-  const highlightedCode = hljs.highlight(text, { language }).value;
+  const highlightedCode = hljs.highlight(processedText, { language }).value;
   return `<pre><code class="hljs language-${language}">${highlightedCode}</code></pre>`;
 };
 
@@ -22,28 +35,112 @@ marked.use({ renderer });
 
 interface MarkdownProps {
   content: string;
+  enableAnimations?: boolean;
 }
 
-const Markdown: React.FC<MarkdownProps> = ({ content }) => {
+const Markdown: React.FC<MarkdownProps> = ({ content, enableAnimations = true }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
+  const [htmlContent, setHtmlContent] = useState<string>('');
+
+  // 设置滚动显示动画
+  const setupScrollReveal = (container: HTMLElement) => {
+    const elements = container.querySelectorAll('.scroll-reveal-element');
+    if (elements.length === 0) return;
+
+    // 为每个元素设置延迟
+    elements.forEach((el, index) => {
+      const element = el as HTMLElement;
+      const delay = element.dataset.delay || (index * 100).toString();
+      element.style.transitionDelay = `${delay}ms`;
+    });
+
+    // 使用requestAnimationFrame优化性能
+    let rafId: number;
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      rafId = requestAnimationFrame(() => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+    };
+
+    // 创建Intersection Observer
+    const observer = new IntersectionObserver(
+      observerCallback,
+      { threshold: 0.1, rootMargin: '0px' }
+    );
+
+    // 观察所有元素
+    elements.forEach((el) => observer.observe(el));
+
+    // 清理函数
+    return () => {
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
+      observer.disconnect();
+    };
+  };
 
   useEffect(() => {
     const renderMarkdown = async () => {
-      if (containerRef.current) {
-        try {
-          const html = await marked.parse(content);
-          containerRef.current.innerHTML = html;
-          setError(null);
-        } catch (err) {
-          console.error('Markdown渲染错误:', err);
-          setError('文章内容渲染失败，请稍后重试');
-        }
+      try {
+        const html = await marked.parse(content);
+        setHtmlContent(html);
+        setError(null);
+      } catch (err) {
+        console.error('Markdown渲染错误:', err);
+        setError('文章内容渲染失败，请稍后重试');
       }
     };
 
     renderMarkdown();
   }, [content]);
+
+  useEffect(() => {
+    if (containerRef.current && htmlContent) {
+      // 创建一个临时div来解析HTML
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = htmlContent;
+      
+      // 查找所有的代码块
+      const codeBlocks = tempDiv.querySelectorAll('pre code');
+      codeBlocks.forEach(block => {
+        const codeText = block.textContent || '';
+        // 处理代码块中的环境变量引用
+        const processedText = codeText.replace(
+          /process\.env\.NODE_ENV/g,
+          "'development'"
+        ).replace(
+          /process\.env\.\w+/g,
+          "undefined"
+        );
+        block.textContent = processedText;
+      });
+      
+      // 将处理后的HTML内容插入到容器中
+      containerRef.current.innerHTML = tempDiv.innerHTML;
+      
+      // 如果启用动画，为元素添加滚动显示类
+      if (enableAnimations) {
+        const elements = containerRef.current.querySelectorAll('h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, pre, img');
+        elements.forEach((el, index) => {
+          el.classList.add('scroll-reveal-element');
+          el.setAttribute('data-delay', (index * 100).toString());
+        });
+        
+        // 设置滚动显示动画
+        const cleanup = setupScrollReveal(containerRef.current);
+        
+        // 返回清理函数
+        return cleanup;
+      }
+    }
+  }, [htmlContent, enableAnimations]);
 
   if (error) {
     return <div className="markdown-container">{error}</div>;
@@ -210,6 +307,36 @@ const MarkdownStyles = `
 
 .markdown-container li {
   margin: 0.5rem 0;
+}
+
+/* 滚动显示动画样式 */
+.markdown-container .scroll-reveal-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.markdown-container .scroll-reveal-element.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 代码块特殊动画 */
+.markdown-container pre.scroll-reveal-element {
+  transform: translateY(10px) scale(0.98);
+}
+
+.markdown-container pre.scroll-reveal-element.revealed {
+  transform: translateY(0) scale(1);
+}
+
+/* 图片特殊动画 */
+.markdown-container img.scroll-reveal-element {
+  transform: translateY(20px) scale(0.95);
+}
+
+.markdown-container img.scroll-reveal-element.revealed {
+  transform: translateY(0) scale(1);
 }
 `;
 

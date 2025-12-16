@@ -1,5 +1,6 @@
 import type { Post } from '../interfaces/post';
 import matter from 'gray-matter';
+import { processMarkdownContent } from './utils';
 
 // 使用 Vite 的 import.meta.glob 动态导入 _posts 目录下的所有 MD 文件
 const posts = import.meta.glob('../../_posts/*.md', { eager: true, query: '?raw', import: 'default' });
@@ -14,8 +15,11 @@ const getAllPosts = (): Post[] => {
       const slug = path.replace(/^\.\.\/\.\.\/_posts\//, '').replace(/\.md$/, '');
       const fileContents = module;
       
+      // 处理Markdown内容中的环境变量引用
+      const processedContent = processMarkdownContent(fileContents);
+      
       // 使用 gray-matter 解析 MD 文件的 frontmatter
-      const { data, content } = matter(fileContents);
+      const { data, content } = matter(processedContent);
 
       return {
         slug,

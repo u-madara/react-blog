@@ -1,0 +1,172 @@
+/* 骨架屏样式 */
+.skeleton {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.skeleton-text {
+  height: 1em;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+}
+
+.skeleton-rectangular {
+  display: block;
+}
+
+.skeleton-circular {
+  border-radius: 50%;
+}
+
+/* 脉冲动画 */
+.skeleton-pulse {
+  animation: skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* 波浪动画 */
+.skeleton-wave {
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-wave::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+  animation: skeleton-wave 1.5s infinite;
+}
+
+@keyframes skeleton-wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* 文本容器 */
+.skeleton-text-container {
+  width: 100%;
+}
+
+/* 文章卡片骨架屏 */
+.article-card-skeleton {
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+}
+
+.article-card-skeleton-image {
+  height: 200px;
+  width: 100%;
+}
+
+.article-card-skeleton-content {
+  padding: var(--spacing-md);
+}
+
+.article-card-skeleton-title {
+  height: 1.5em;
+  width: 90%;
+  margin-bottom: var(--spacing-sm);
+}
+
+.article-card-skeleton-excerpt {
+  height: 1em;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.article-card-skeleton-excerpt:last-child {
+  width: 70%;
+  margin-bottom: var(--spacing-md);
+}
+
+.article-card-skeleton-meta {
+  display: flex;
+  justify-content: space-between;
+  height: 1em;
+}
+
+.article-card-skeleton-date {
+  width: 100px;
+}
+
+.article-card-skeleton-tag {
+  width: 80px;
+}
+
+/* 文章详情页骨架屏 */
+.post-detail-skeleton {
+  padding: var(--spacing-lg);
+}
+
+.post-detail-skeleton-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.post-detail-skeleton-title {
+  height: 2.5em;
+  width: 85%;
+  margin-bottom: var(--spacing-md);
+}
+
+.post-detail-skeleton-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.post-detail-skeleton-meta-item {
+  height: 1em;
+  width: 120px;
+}
+
+.post-detail-skeleton-content {
+  margin-bottom: var(--spacing-md);
+}
+
+.post-detail-skeleton-paragraph {
+  margin-bottom: var(--spacing-md);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .article-card-skeleton-image {
+    height: 150px;
+  }
+  
+  .post-detail-skeleton-title {
+    height: 2em;
+    width: 100%;
+  }
+}
