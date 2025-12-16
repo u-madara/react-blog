@@ -41,7 +41,7 @@ npm_mirror: https://npmmirror.com/mirrors/npm/`,__vite_glob_0_1='---\ntitle: "ne
 title: "html面试题"
 excerpt: "html的一些面试题"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-12"
+date: "2025-11-14"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -405,7 +405,7 @@ web worker是前端实现多线程的重要技术，通过将耗时操作移至�
 title: "前端架构师系统化学习路线"
 excerpt: "从前端开发者到架构师的系统化学习路径，涵盖技术深度、架构设计、工程化实践和技术管理四个阶段"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-13"
+date: "2025-11-15"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -781,7 +781,7 @@ ogImage:
 title: "前端架构师学习资源系统性总结"
 excerpt: "从前端开发者到架构师必备的学习资源汇总，涵盖技术深度、架构设计、工程化实践和技术管理四个阶段"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-15"
+date: "2025-11-16"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -1733,7 +1733,7 @@ ogImage:
 title: "JavaScript异步编程深度解析"
 excerpt: "深入解析JavaScript异步编程机制，从回调函数到Promise再到async/await的演进，探讨事件循环、微任务与宏任务，以及实际开发中的异步模式与最佳实践"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-17"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -4012,7 +4012,7 @@ JavaScript异步编程已经从简单的回调函数发展到复杂而强大的�
 title: "JavaScript内存管理与性能优化"
 excerpt: "深入探讨JavaScript内存管理机制、垃圾回收算法、内存泄漏检测与预防，以及各种性能优化技巧，帮助开发者构建高性能、低内存消耗的JavaScript应用"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-18"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -6106,7 +6106,7 @@ JavaScript内存管理与性能优化是一个复杂而重要的领域，它直�
 title: "JavaScript闭包与作用域链详解"
 excerpt: "深入探讨JavaScript闭包与作用域链的工作原理，从执行上下文、词法环境到闭包的实际应用，全面解析这一JavaScript核心概念，帮助开发者真正理解并灵活运用闭包"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-19"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -7958,7 +7958,7 @@ function moduleSystemsAndClosures() {
 title: "JavaScript原型链与继承机制"
 excerpt: "深入探讨JavaScript原型链与继承机制的工作原理，从原型对象、原型链到各种继承模式，全面解析JavaScript面向对象编程的核心概念，帮助开发者真正理解并灵活运用JavaScript的继承特性"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-20"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -9808,7 +9808,7 @@ JavaScript的原型链与继承机制是这门语言最核心也最独特的特�
 title: "JavaScript Web Workers与多线程编程"
 excerpt: "深入探讨JavaScript Web Workers与多线程编程技术，从基础概念到高级应用，全面解析Web Workers的工作原理、通信机制、使用场景和最佳实践，帮助开发者掌握JavaScript并发编程的核心技能"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-21"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -12147,13 +12147,13 @@ Web Workers的主要优势包括：
 无论是处理大量数据、执行复杂计算，还是实现并行网络请求，Web Workers都是现代Web开发中不可或缺的工具。通过合理使用Web Workers，我们可以显著提升应用性能，提供更好的用户体验。`,__vite_glob_0_11=`---
 title: "Vue.js响应式系统深度解析"
 excerpt: "深入解析Vue.js响应式系统的工作原理，从基础概念到高级应用，全面剖析Vue 3的响应式系统，帮助开发者更好地理解和使用Vue"
-coverImage: "/assets/blog/vue-reactive-system/cover.jpg"
-date: "2025-12-16"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-11-22"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: "/assets/blog/vue-reactive-system/cover.jpg"
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # Vue.js响应式系统深度解析
@@ -12821,7 +12821,7 @@ Vue 3的响应式系统是基于Proxy和Reflect构建的强大系统，它提供
 title: "Vue.js虚拟DOM与Diff算法深度解析"
 excerpt: "深入解析Vue.js虚拟DOM实现与Diff算法，从基础概念到高级优化，全面剖析其工作原理，帮助开发者理解现代前端框架的核心技术"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-23"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -13612,7 +13612,7 @@ Vue.js的虚拟DOM与Diff算法是框架的核心技术，它们通过以下方�
 title: "Vue.js组件系统与生命周期深度解析"
 excerpt: "深入解析Vue.js组件系统与生命周期机制，从基础概念到高级模式，全面剖析组件的创建、渲染、更新和销毁过程，帮助开发者掌握Vue.js的核心理念"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-24"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -14923,13 +14923,13 @@ Vue.js的组件系统是其核心优势之一，它通过以下方式提供了�
 在实际开发中，我们应该根据应用场景选择合适的组件模式和通信方式，充分利用Vue提供的生命周期钩子和优化手段，构建高效、可维护的组件系统。通过深入理解组件系统的内部机制，我们能够更好地发挥Vue.js的潜力，构建出更加优秀的应用。`,__vite_glob_0_14=`---
 title: "Vue.js状态管理与Pinia深度解析"
 excerpt: "深入解析Vue.js状态管理的原理与实践，重点介绍Pinia的设计理念、核心特性和最佳实践，帮助开发者掌握现代前端应用的状态管理"
-coverImage: "/assets/blog/vue-state-management/pinia-cover.jpg"
-date: "2025-12-16"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-11-25"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: "/assets/blog/vue-state-management/pinia-cover.jpg"
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # Vue.js状态管理与Pinia深度解析
@@ -16499,7 +16499,7 @@ Vue.js的状态管理经历了从简单的组件间通信到复杂的全局状�
 title: "Vue.js性能优化与调试技巧"
 excerpt: "深入探讨Vue.js应用的性能优化策略，包括渲染性能优化、内存管理、打包优化等方面，并介绍实用的调试技巧和工具，帮助开发者构建高性能、可维护的Vue应用"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-26"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -17814,7 +17814,7 @@ Vue.js性能优化是一个系统工程，需要从多个层面进行考虑：
 title: "React Hooks深度解析"
 excerpt: "深入解析React Hooks的原理、使用方法和最佳实践，帮助开发者全面掌握这一革命性特性，提升React组件开发效率和代码质量"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-27"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -19209,7 +19209,7 @@ React Hooks彻底改变了我们编写React组件的方式，它提供了以下�
 title: "React虚拟DOM与Diff算法深度解析"
 excerpt: "深入解析React虚拟DOM的实现原理、Diff算法的工作机制以及性能优化策略，帮助开发者理解React高效渲染的底层原理"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-28"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -20315,7 +20315,7 @@ React虚拟DOM和Diff算法是React高性能渲染的核心机制。通过理解
 title: "React状态管理与Redux深度解析"
 excerpt: "深入探讨React状态管理的各种方案，重点解析Redux的核心概念、工作原理以及最佳实践，帮助开发者构建可维护、可扩展的React应用"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-29"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -21779,7 +21779,7 @@ React状态管理是构建复杂应用的关键部分，而Redux提供了一种�
 title: "React性能优化与最佳实践"
 excerpt: "深入探讨React应用的性能优化策略，从组件渲染优化到代码分割，从内存管理到构建优化，帮助开发者构建高性能的React应用"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-11-30"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -23146,7 +23146,7 @@ React性能优化是一个多方面的过程，涉及组件渲染、代码分割
 title: "React服务端渲染与Next.js深度解析"
 excerpt: "深入探讨React服务端渲染的原理、Next.js的核心特性以及最佳实践，帮助开发者构建高性能、SEO友好的React应用"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-01"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -24401,7 +24401,7 @@ Next.js的选择取决于你的应用需求：
 title: "前端安全基础与XSS防护"
 excerpt: "深入探讨前端安全的基础知识，重点分析XSS攻击的原理、类型、防护策略以及最佳实践，帮助开发者构建更安全的前端应用"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-02"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -25623,7 +25623,7 @@ document.addEventListener('DOMContentLoaded', () => {
 title: "CSRF攻击与防护策略"
 excerpt: "深入探讨CSRF攻击的原理、危害、检测方法以及全面的防护策略，帮助开发者构建更安全的Web应用"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-03"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -27414,7 +27414,7 @@ CSRF攻击是Web应用中常见的安全威胁，通过多层防护策略可以�
 title: "点击劫持(Clickjacking)攻击与防护"
 excerpt: "深入探讨点击劫持攻击的原理、类型、危害以及全面的防护策略，帮助开发者构建更安全的Web应用"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-04"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -28002,7 +28002,7 @@ app.post('/api/transfer',
 title: "前端数据加密与传输安全"
 excerpt: "深入探讨前端数据加密与传输安全的核心技术，包括对称加密、非对称加密、哈希算法、数字签名以及HTTPS传输安全，帮助开发者构建更安全的前端应用"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-05"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -29835,7 +29835,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 title: "前端安全最佳实践与综合防护"
 excerpt: "系统性地介绍前端安全的最佳实践，包括安全编码规范、安全测试方法、安全监控与响应、安全合规性以及综合安全架构设计，帮助开发者构建更加安全可靠的前端应用"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-06"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -33690,7 +33690,7 @@ document.addEventListener('DOMContentLoaded', () => {
 title: "微前端架构基础与实现原理"
 excerpt: "深入探讨微前端架构的基础概念、实现原理和最佳实践，帮助开发者理解并应用这一现代前端架构模式"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-07"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -34869,7 +34869,7 @@ console.log(sandboxWindow.globalVariable); // 'This is a global variable'
 title: "微前端应用间通信与状态管理"
 excerpt: "深入探讨微前端架构中应用间通信机制和状态管理方案，帮助开发者解决微前端应用间的数据共享和交互问题"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-08"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -37388,7 +37388,7 @@ const cartApp = new CartApp();
 title: "微前端样式隔离与沙箱机制"
 excerpt: "深入探讨微前端架构中的样式隔离和沙箱机制，帮助开发者解决微前端应用间的样式冲突和全局污染问题"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-09"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -38543,7 +38543,7 @@ framework.loadApp('app2', app2Container);
 title: "微前端性能优化与监控"
 excerpt: "深入探讨微前端架构中的性能优化策略和监控方案，帮助开发者构建高性能、可观测的微前端应用"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-10"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -40638,7 +40638,7 @@ setInterval(() => {
 title: "微前端部署与运维实践"
 excerpt: "深入探讨微前端架构的部署策略和运维实践，帮助开发者实现微前端应用的持续集成、持续部署和高效运维"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2025-12-16"
+date: "2025-12-11"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -42883,7 +42883,7 @@ setInterval(() => {
 title: "前端工程化基础与构建工具"
 excerpt: "深入探讨前端工程化的基础知识和构建工具，包括Webpack、Vite等现代构建工具的使用和原理，帮助开发者建立完整的前端工程化体系"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2024-02-09"
+date: "2025-12-12"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -43685,7 +43685,7 @@ module.exports = {
 title: "前端代码规范与质量保证"
 excerpt: "深入探讨前端代码规范和质量保证体系，包括ESLint配置、代码风格统一、代码审查流程等，帮助团队建立高效的代码质量管理体系"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2024-02-10"
+date: "2025-12-13"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -44608,7 +44608,7 @@ analyzeCodeQuality('src');
 title: "前端自动化测试策略与实践"
 excerpt: "深入探讨前端自动化测试的策略和实践，包括单元测试、集成测试、E2E测试等，帮助开发者建立完整的测试体系和质量保证流程"
 coverImage: "/assets/blog/hello-world/cover.jpg"
-date: "2024-02-11"
+date: "2025-12-14"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -45655,7 +45655,7 @@ describe('应用性能测试', () => {
 title: "前端持续集成与部署实践"
 excerpt: "深入探讨前端持续集成与部署的实践方案，包括CI/CD流程设计、自动化构建、部署策略等，帮助团队建立高效的开发运维一体化体系"
 coverImage: "/assets/blog/preview/cover.jpg"
-date: "2024-02-12"
+date: "2025-12-15"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
@@ -46719,7 +46719,7 @@ jobs:
 title: "前端工程化最佳实践与总结"
 excerpt: "系统总结前端工程化的最佳实践，包括架构设计、团队协作、性能优化等方面，帮助开发者构建高效、可维护的前端项目体系"
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2024-02-13"
+date: "2025-12-16"
 author:
   name: 小羽
   picture: "/assets/blog/authors/jj.jpeg"
