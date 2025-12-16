@@ -2,8 +2,10 @@
 .footer {
   background-color: #fafafa;
   border-top: 1px solid #e5e7eb;
-  padding: 7rem 0;
-  margin-top: auto;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 .footer-content {
@@ -92,7 +94,7 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 4rem 0;
+    padding: 1.5rem 0;
   }
   
   .footer-title {

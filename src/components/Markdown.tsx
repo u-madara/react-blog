@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { marked } from 'marked';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
@@ -7,27 +7,18 @@ import 'highlight.js/styles/github.css';
 marked.use({
   extensions: [],
   gfm: true,
-  breaks: true,
-  // 使用hooks来处理代码高亮和HTML转义
-  hooks: {
-    postprocess(html) {
-      // 手动处理代码高亮和HTML转义
-      return html.replace(/<pre><code class="language-(\w+)">(.*?)<\/code><\/pre>/gs, (_match, lang, code) => {
-        // 首先反转义HTML字符，然后再进行高亮处理
-        const unescapedCode = code
-          .replace(/&lt;/g, '<')
-          .replace(/&gt;/g, '>')
-          .replace(/&quot;/g, '"')
-          .replace(/&#39;/g, "'")
-          .replace(/&amp;/g, '&');
-        
-        const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-        const highlightedCode = hljs.highlight(unescapedCode, { language }).value;
-        return `<pre><code class="language-${language}">${highlightedCode}</code></pre>`;
-      });
-    }
-  }
+  breaks: true
 });
+
+// 使用marked的renderer来处理代码高亮
+const renderer = new marked.Renderer();
+renderer.code = function({ text, lang }: { text: string; lang?: string }) {
+  const language = lang && hljs.getLanguage(lang) ? lang : 'plaintext';
+  const highlightedCode = hljs.highlight(text, { language }).value;
+  return `<pre><code class="hljs language-${language}">${highlightedCode}</code></pre>`;
+};
+
+marked.use({ renderer });
 
 interface MarkdownProps {
   content: string;
@@ -35,17 +26,28 @@ interface MarkdownProps {
 
 const Markdown: React.FC<MarkdownProps> = ({ content }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const renderMarkdown = async () => {
       if (containerRef.current) {
-        const html = await marked.parse(content);
-        containerRef.current.innerHTML = html;
+        try {
+          const html = await marked.parse(content);
+          containerRef.current.innerHTML = html;
+          setError(null);
+        } catch (err) {
+          console.error('Markdown渲染错误:', err);
+          setError('文章内容渲染失败，请稍后重试');
+        }
       }
     };
 
     renderMarkdown();
   }, [content]);
+
+  if (error) {
+    return <div className="markdown-container">{error}</div>;
+  }
 
   return <div className="markdown-container" ref={containerRef} />;
 };
@@ -54,9 +56,21 @@ const MarkdownStyles = `
 .markdown-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0;
+  padding: 1.5rem 2rem;
   font-size: 1.125rem;
   line-height: 1.625;
+  overflow-x: hidden;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* 移动端Markdown优化 */
+@media (max-width: 768px) {
+  .markdown-container {
+    max-width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
 }
 
 .markdown-container p,
@@ -117,6 +131,9 @@ const MarkdownStyles = `
   padding: 16px;
   overflow: auto;
   margin: 1.5rem 0;
+  max-width: 100%;
+  word-wrap: normal;
+  white-space: pre;
 }
 
 .markdown-container pre code {
@@ -136,10 +153,16 @@ const MarkdownStyles = `
   margin: 1.5rem 0;
 }
 
+.markdown-container .table-wrapper {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
 .markdown-container table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1.5rem 0;
+  margin: 0;
 }
 
 .markdown-container table th,

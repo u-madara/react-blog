@@ -26,22 +26,35 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
+}
+
+/* 移动端容器优化 */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.75rem;
+    max-width: 100%;
+  }
 }
 
 /* 应用容器 */
 .app-container {
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
 }
 
 /* 头部样式 */
 header {
   padding: 20px 0;
-  margin-bottom: 40px;
   border-bottom: 1px solid #eaecef;
+  flex-shrink: 0;
 }
 
 header .container {
@@ -77,7 +90,11 @@ header h1 {
 /* 主内容区域 */
 main {
   flex: 1;
-  margin-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
 }
 
 /* 英雄区样式 */
@@ -185,6 +202,15 @@ main {
 .post-detail {
   max-width: 800px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 移动端文章详情优化 */
+@media (max-width: 768px) {
+  .post-detail {
+    max-width: 100%;
+  }
 }
 
 .post-title {
@@ -337,6 +363,16 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 5rem;
   }
+}
+
+/* Footer固定在底部样式 */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  flex-shrink: 0;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {

@@ -2,7 +2,7 @@ import type { Post } from '../interfaces/post';
 import matter from 'gray-matter';
 
 // 使用 Vite 的 import.meta.glob 动态导入 _posts 目录下的所有 MD 文件
-const posts = import.meta.glob('../../_posts/*.md', { eager: true, as: 'raw' });
+const posts = import.meta.glob('../../_posts/*.md', { eager: true, query: '?raw', import: 'default' });
 
 // 获取所有文章
 const getAllPosts = (): Post[] => {

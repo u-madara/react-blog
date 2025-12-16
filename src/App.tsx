@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <MarkdownStyleComponent />
       <div className="app-container">
-        <header>
+        <header className="w-full">
           <div className="container">
             <h1>小羽的笔记</h1>
           </div>
@@ -137,7 +137,7 @@ const PostDetail = () => {
   if (!post) {
     return (
       <div className="app-container">
-        <header>
+        <header className="w-full">
           <div className="container">
             <button className="back-button" onClick={goBack}>
               back
@@ -159,7 +159,7 @@ const PostDetail = () => {
     <>
       <MarkdownStyleComponent />
       <div className="app-container">
-        <header>
+        <header className="w-full">
           <div className="container">
             <button className="back-button" onClick={goBack}>
               back
