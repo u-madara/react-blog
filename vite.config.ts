@@ -11,6 +11,8 @@ export default defineConfig({
   resolve: {
     alias: {
       buffer: 'buffer',
+      stream: 'stream-browserify',
+      util: 'util',
     },
   },
   build: {
@@ -21,18 +23,13 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     // 优化依赖预构建
     commonjsOptions: {
-      include: [],
+      include: [/node_modules/],
+      transformMixedEsModules: true,
     },
     // 启用CSS代码分割
     cssCodeSplit: true,
     // 压缩选项
     minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
   },
   // 开发服务器优化
   server: {
@@ -43,6 +40,7 @@ export default defineConfig({
   },
   // 依赖优化
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom', 'buffer'],
+    include: ['react', 'react-dom', 'react-router-dom', 'buffer', 'gray-matter', 'marked'],
+    force: true,
   },
 })

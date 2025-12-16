@@ -1,37 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { marked } from 'marked';
+import { use, parse } from 'marked';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
 
-// 配置marked，添加highlight插件
-marked.use({
+// 配置marked
+use({
   gfm: true,
   breaks: true,
   // 确保不会执行代码块中的JavaScript
   sanitize: true,
   // 设置为false以避免自动链接
   smartLists: true,
-  smartypants: true
+  smartypants: true,
+  renderer: {
+    code({ text, lang }: { text: string; lang?: string }) {
+      // 处理代码块中的环境变量引用
+      const processedText = text.replace(
+        /process\.env\.NODE_ENV/g,
+        "'development'"
+      ).replace(
+        /process\.env\.\w+/g,
+        "undefined"
+      );
+      
+      const language = lang && hljs.getLanguage(lang) ? lang : 'plaintext';
+      const highlightedCode = hljs.highlight(processedText, { language }).value;
+      return `<pre><code class="hljs language-${language}">${highlightedCode}</code></pre>`;
+    }
+  }
 });
-
-// 使用marked的renderer来处理代码高亮
-const renderer = new marked.Renderer();
-renderer.code = function({ text, lang }: { text: string; lang?: string }) {
-  // 处理代码块中的环境变量引用
-  const processedText = text.replace(
-    /process\.env\.NODE_ENV/g,
-    "'development'"
-  ).replace(
-    /process\.env\.\w+/g,
-    "undefined"
-  );
-  
-  const language = lang && hljs.getLanguage(lang) ? lang : 'plaintext';
-  const highlightedCode = hljs.highlight(processedText, { language }).value;
-  return `<pre><code class="hljs language-${language}">${highlightedCode}</code></pre>`;
-};
-
-marked.use({ renderer });
 
 interface MarkdownProps {
   content: string;
@@ -89,7 +86,7 @@ const Markdown: React.FC<MarkdownProps> = ({ content, enableAnimations = true })
   useEffect(() => {
     const renderMarkdown = async () => {
       try {
-        const html = await marked.parse(content);
+        const html = await parse(content);
         setHtmlContent(html);
         setError(null);
       } catch (err) {

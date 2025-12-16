@@ -3,6 +3,7 @@ declare module 'marked' {
   export function marked(src: string): string;
   export function parse(src: string): Promise<string>;
   export function use(options: any): void;
+  export function setOptions(options: any): void;
   export const Renderer: {
     new (): any;
   };
@@ -10,6 +11,7 @@ declare module 'marked' {
   const _default: {
     parse: (src: string) => Promise<string>;
     use: (options: any) => void;
+    setOptions: (options: any) => void;
     Renderer: {
       new (): any;
     };

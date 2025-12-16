@@ -2,7 +2,7 @@
 import { Buffer } from 'buffer';
 
 // Make Buffer available globally
-window.Buffer = Buffer;
+(window as any).Buffer = Buffer;
 
 // Export for use in other modules
 export { Buffer };

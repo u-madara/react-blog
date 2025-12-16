@@ -13,7 +13,7 @@ const getAllPosts = (): Post[] => {
     .map(([path, module]) => {
       // 从路径中提取 slug
       const slug = path.replace(/^\.\.\/\.\.\/_posts\//, '').replace(/\.md$/, '');
-      const fileContents = module;
+      const fileContents = module as string;
       
       // 处理Markdown内容中的环境变量引用
       const processedContent = processMarkdownContent(fileContents);
