@@ -777,7 +777,19 @@ ogImage:
 5. **参与开源项目**：通过参与开源项目提升实战能力与技术影响力
 
 通过以上系统化学习路线，您将能够全面提升技术深度、架构设计能力、工程化实践和技术管理能力，成功从资深前端开发者转型为优秀的前端架构师。
-`,__vite_glob_0_5=`# 前端架构师学习资源系统性总结
+`,__vite_glob_0_5=`---
+title: "前端架构师学习资源系统性总结"
+excerpt: "从前端开发者到架构师必备的学习资源汇总，涵盖技术深度、架构设计、工程化实践和技术管理四个阶段"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-15"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# 前端架构师学习资源系统性总结
 
 ## 第一阶段：技术深度拓展资源总结
 
@@ -1718,12 +1730,15 @@ ogImage:
    - 拓宽技术视野与解决方案
 
 通过系统化的学习资源整合与实践方法，您将能够全面提升技术能力，从前端开发者成长为优秀的前端架构师。记住，持续学习与实践是技术成长的关键，选择适合自己的资源并坚持学习，定能实现职业发展的目标。`,__vite_glob_0_6=`---
-title: JavaScript异步编程深度解析
-date: 2024-01-15
-tags: [JavaScript, 异步编程, Promise, async/await]
-coverImage: /assets/blog/async-javascript/cover.jpg
-ogImage: /assets/blog/async-javascript/cover.jpg
-excerpt: 深入解析JavaScript异步编程机制，从回调函数到Promise再到async/await的演进，探讨事件循环、微任务与宏任务，以及实际开发中的异步模式与最佳实践。
+title: "JavaScript异步编程深度解析"
+excerpt: "深入解析JavaScript异步编程机制，从回调函数到Promise再到async/await的演进，探讨事件循环、微任务与宏任务，以及实际开发中的异步模式与最佳实践"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # JavaScript异步编程深度解析
@@ -3994,12 +4009,15 @@ JavaScript异步编程已经从简单的回调函数发展到复杂而强大的�
 随着Web平台的发展，新的异步API和模式不断涌现，为开发者提供了更强大的工具来构建高性能、响应式的应用程序。持续学习和实践这些技术，将帮助我们在日益复杂的前端开发环境中保持竞争力。
 
 异步编程不仅是技术问题，更是一种思维方式。掌握它，意味着我们能够更好地处理不确定性、管理并发操作，并构建出更可靠、更高效的应用程序。在未来的JavaScript开发中，异步编程将继续扮演核心角色，值得我们深入研究和探索。`,__vite_glob_0_7=`---
-title: JavaScript内存管理与性能优化
-date: 2024-01-16
-tags: [JavaScript, 内存管理, 性能优化, 垃圾回收]
-coverImage: /assets/blog/js-memory-performance/cover.jpg
-ogImage: /assets/blog/js-memory-performance/cover.jpg
-excerpt: 深入探讨JavaScript内存管理机制、垃圾回收算法、内存泄漏检测与预防，以及各种性能优化技巧，帮助开发者构建高性能、低内存消耗的JavaScript应用。
+title: "JavaScript内存管理与性能优化"
+excerpt: "深入探讨JavaScript内存管理机制、垃圾回收算法、内存泄漏检测与预防，以及各种性能优化技巧，帮助开发者构建高性能、低内存消耗的JavaScript应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # JavaScript内存管理与性能优化
@@ -6085,12 +6103,15 @@ JavaScript内存管理与性能优化是一个复杂而重要的领域，它直�
 作为前端开发者，我们应该持续关注性能优化的最佳实践，结合实际项目需求，选择合适的优化策略。记住，性能优化不是一次性的工作，而是一个持续的过程，需要我们不断地测量、分析和改进。
 
 通过掌握本文介绍的技术和方法，您将能够更好地应对JavaScript开发中的内存管理和性能挑战，为用户提供更流畅、更高效的Web体验。`,__vite_glob_0_8=`---
-title: JavaScript闭包与作用域链详解
-date: 2024-01-17
-tags: [JavaScript, 闭包, 作用域链, 执行上下文]
-coverImage: /assets/blog/js-closure-scope/cover.jpg
-ogImage: /assets/blog/js-closure-scope/cover.jpg
-excerpt: 深入探讨JavaScript闭包与作用域链的工作原理，从执行上下文、词法环境到闭包的实际应用，全面解析这一JavaScript核心概念，帮助开发者真正理解并灵活运用闭包。
+title: "JavaScript闭包与作用域链详解"
+excerpt: "深入探讨JavaScript闭包与作用域链的工作原理，从执行上下文、词法环境到闭包的实际应用，全面解析这一JavaScript核心概念，帮助开发者真正理解并灵活运用闭包"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # JavaScript闭包与作用域链详解
@@ -7934,12 +7955,15 @@ function moduleSystemsAndClosures() {
 随着JavaScript语言的不断发展，闭包的概念也在不断演进。ES6+引入的新特性（如箭头函数、块级作用域、模块系统等）为闭包提供了更多的表达能力和应用场景。
 
 掌握闭包和作用域链，是每个JavaScript开发者从初学者走向高级开发者的必经之路。希望本文能够帮助您深入理解这一重要概念，并在实际开发中灵活运用。`,__vite_glob_0_9=`---
-title: JavaScript原型链与继承机制
-date: 2024-01-18
-tags: [JavaScript, 原型链, 继承, 面向对象]
-coverImage: /assets/blog/js-prototype-inheritance/cover.jpg
-ogImage: /assets/blog/js-prototype-inheritance/cover.jpg
-excerpt: 深入探讨JavaScript原型链与继承机制的工作原理，从原型对象、原型链到各种继承模式，全面解析JavaScript面向对象编程的核心概念，帮助开发者真正理解并灵活运用JavaScript的继承特性。
+title: "JavaScript原型链与继承机制"
+excerpt: "深入探讨JavaScript原型链与继承机制的工作原理，从原型对象、原型链到各种继承模式，全面解析JavaScript面向对象编程的核心概念，帮助开发者真正理解并灵活运用JavaScript的继承特性"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # JavaScript原型链与继承机制
@@ -9781,12 +9805,15 @@ JavaScript的原型链与继承机制是这门语言最核心也最独特的特�
 随着JavaScript语言的发展，ES6引入的\`class\`和\`extends\`语法提供了更简洁的继承表达方式，但底层仍然是基于原型的机制。理解原型链的工作原理，对于掌握JavaScript面向对象编程至关重要。
 
 无论是传统的原型继承，还是现代的ES6类继承，其核心都是对象之间的委托关系。掌握这一核心概念，将帮助我们编写出更清晰、更灵活、更易维护的JavaScript代码。`,__vite_glob_0_10=`---
-title: JavaScript Web Workers与多线程编程
-date: 2024-01-19
-tags: [JavaScript, Web Workers, 多线程, 并发编程]
-coverImage: /assets/blog/js-web-workers/cover.jpg
-ogImage: /assets/blog/js-web-workers/cover.jpg
-excerpt: 深入探讨JavaScript Web Workers与多线程编程技术，从基础概念到高级应用，全面解析Web Workers的工作原理、通信机制、使用场景和最佳实践，帮助开发者掌握JavaScript并发编程的核心技能。
+title: "JavaScript Web Workers与多线程编程"
+excerpt: "深入探讨JavaScript Web Workers与多线程编程技术，从基础概念到高级应用，全面解析Web Workers的工作原理、通信机制、使用场景和最佳实践，帮助开发者掌握JavaScript并发编程的核心技能"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # JavaScript Web Workers与多线程编程
@@ -12117,7 +12144,19 @@ Web Workers的主要优势包括：
 
 随着Web技术的发展，Web Workers的能力也在不断扩展，如SharedArrayBuffer和Atomics API提供了更高效的数据共享机制。掌握Web Workers技术，将帮助开发者构建更强大、更流畅的Web应用，充分利用现代浏览器的多核处理能力。
 
-无论是处理大量数据、执行复杂计算，还是实现并行网络请求，Web Workers都是现代Web开发中不可或缺的工具。通过合理使用Web Workers，我们可以显著提升应用性能，提供更好的用户体验。`,__vite_glob_0_11=`# Vue.js响应式系统深度解析
+无论是处理大量数据、执行复杂计算，还是实现并行网络请求，Web Workers都是现代Web开发中不可或缺的工具。通过合理使用Web Workers，我们可以显著提升应用性能，提供更好的用户体验。`,__vite_glob_0_11=`---
+title: "Vue.js响应式系统深度解析"
+excerpt: "深入解析Vue.js响应式系统的工作原理，从基础概念到高级应用，全面剖析Vue 3的响应式系统，帮助开发者更好地理解和使用Vue"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# Vue.js响应式系统深度解析
 
 ## 前言
 
@@ -12778,7 +12817,19 @@ Vue 3的响应式系统是基于Proxy和Reflect构建的强大系统，它提供
 3. 创建自定义的响应式解决方案，满足特定需求
 4. 识别和避免性能陷阱，优化应用性能
 
-响应式系统是Vue的核心特性，深入理解它将帮助我们成为更优秀的Vue开发者。在实际开发中，我们应该根据场景选择合适的响应式API，并注意性能优化，以构建高效、可维护的Vue应用。`,__vite_glob_0_12=`# Vue.js虚拟DOM与Diff算法深度解析
+响应式系统是Vue的核心特性，深入理解它将帮助我们成为更优秀的Vue开发者。在实际开发中，我们应该根据场景选择合适的响应式API，并注意性能优化，以构建高效、可维护的Vue应用。`,__vite_glob_0_12=`---
+title: "Vue.js虚拟DOM与Diff算法深度解析"
+excerpt: "深入解析Vue.js虚拟DOM实现与Diff算法，从基础概念到高级优化，全面剖析其工作原理，帮助开发者理解现代前端框架的核心技术"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# Vue.js虚拟DOM与Diff算法深度解析
 
 ## 前言
 
@@ -13557,7 +13608,19 @@ Vue.js的虚拟DOM与Diff算法是框架的核心技术，它们通过以下方�
 3. 在复杂场景下进行针对性优化
 4. 更好地使用Vue提供的优化工具和API
 
-在实际开发中，我们应该关注组件的渲染性能，合理使用key、v-memo、keep-alive等优化手段，并结合性能分析工具，持续优化应用的渲染效率。通过深入理解虚拟DOM和Diff算法，我们能够构建出更加高效、流畅的Vue应用。`,__vite_glob_0_13=`# Vue.js组件系统与生命周期深度解析
+在实际开发中，我们应该关注组件的渲染性能，合理使用key、v-memo、keep-alive等优化手段，并结合性能分析工具，持续优化应用的渲染效率。通过深入理解虚拟DOM和Diff算法，我们能够构建出更加高效、流畅的Vue应用。`,__vite_glob_0_13=`---
+title: "Vue.js组件系统与生命周期深度解析"
+excerpt: "深入解析Vue.js组件系统与生命周期机制，从基础概念到高级模式，全面剖析组件的创建、渲染、更新和销毁过程，帮助开发者掌握Vue.js的核心理念"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# Vue.js组件系统与生命周期深度解析
 
 ## 前言
 
@@ -14857,7 +14920,19 @@ Vue.js的组件系统是其核心优势之一，它通过以下方式提供了�
 4. 创建可复用的组件库
 5. 解决复杂的组件交互问题
 
-在实际开发中，我们应该根据应用场景选择合适的组件模式和通信方式，充分利用Vue提供的生命周期钩子和优化手段，构建高效、可维护的组件系统。通过深入理解组件系统的内部机制，我们能够更好地发挥Vue.js的潜力，构建出更加优秀的应用。`,__vite_glob_0_14=`# Vue.js状态管理与Pinia深度解析
+在实际开发中，我们应该根据应用场景选择合适的组件模式和通信方式，充分利用Vue提供的生命周期钩子和优化手段，构建高效、可维护的组件系统。通过深入理解组件系统的内部机制，我们能够更好地发挥Vue.js的潜力，构建出更加优秀的应用。`,__vite_glob_0_14=`---
+title: "Vue.js状态管理与Pinia深度解析"
+excerpt: "深入解析Vue.js状态管理的原理与实践，重点介绍Pinia的设计理念、核心特性和最佳实践，帮助开发者掌握现代前端应用的状态管理"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# Vue.js状态管理与Pinia深度解析
 
 ## 前言
 
@@ -16420,7 +16495,19 @@ Vue.js的状态管理经历了从简单的组件间通信到复杂的全局状�
 4. **利用TypeScript**：增强类型安全和开发体验
 5. **结合持久化**：使用插件或订阅机制实现状态持久化
 
-通过深入理解Pinia的设计理念和最佳实践，我们能够构建出更加健壮、可维护的Vue应用状态管理系统，为复杂应用提供坚实的数据基础。`,__vite_glob_0_15=`# Vue.js性能优化与调试技巧
+通过深入理解Pinia的设计理念和最佳实践，我们能够构建出更加健壮、可维护的Vue应用状态管理系统，为复杂应用提供坚实的数据基础。`,__vite_glob_0_15=`---
+title: "Vue.js性能优化与调试技巧"
+excerpt: "深入探讨Vue.js应用的性能优化策略，包括渲染性能优化、内存管理、打包优化等方面，并介绍实用的调试技巧和工具，帮助开发者构建高性能、可维护的Vue应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# Vue.js性能优化与调试技巧
 
 ## 前言
 
@@ -17723,7 +17810,19 @@ Vue.js性能优化是一个系统工程，需要从多个层面进行考虑：
 4. **打包与构建优化**：代码分割、Tree Shaking、资源优化等
 5. **调试技巧与工具**：Vue DevTools、性能分析、错误处理与日志等
 
-通过综合运用这些优化策略和技巧，我们可以构建出高性能、可维护的Vue应用，提供流畅的用户体验。在实际开发中，应该根据应用的具体场景和性能瓶颈，选择合适的优化方案，并通过性能监控工具持续优化应用性能。`,__vite_glob_0_16=`# React Hooks深度解析
+通过综合运用这些优化策略和技巧，我们可以构建出高性能、可维护的Vue应用，提供流畅的用户体验。在实际开发中，应该根据应用的具体场景和性能瓶颈，选择合适的优化方案，并通过性能监控工具持续优化应用性能。`,__vite_glob_0_16=`---
+title: "React Hooks深度解析"
+excerpt: "深入解析React Hooks的原理、使用方法和最佳实践，帮助开发者全面掌握这一革命性特性，提升React组件开发效率和代码质量"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# React Hooks深度解析
 
 ## 前言
 
@@ -19106,7 +19205,19 @@ React Hooks彻底改变了我们编写React组件的方式，它提供了以下�
 4. **保持Hook简单**：每个Hook应该有单一职责
 5. **正确处理依赖数组**：确保依赖数组包含所有外部依赖
 
-通过深入理解React Hooks的原理和最佳实践，我们可以编写出更简洁、更高效、更可维护的React应用。`,__vite_glob_0_17=`# React虚拟DOM与Diff算法深度解析
+通过深入理解React Hooks的原理和最佳实践，我们可以编写出更简洁、更高效、更可维护的React应用。`,__vite_glob_0_17=`---
+title: "React虚拟DOM与Diff算法深度解析"
+excerpt: "深入解析React虚拟DOM的实现原理、Diff算法的工作机制以及性能优化策略，帮助开发者理解React高效渲染的底层原理"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# React虚拟DOM与Diff算法深度解析
 
 ## 前言
 
@@ -20200,7 +20311,19 @@ React虚拟DOM和Diff算法是React高性能渲染的核心机制。通过理解
 3. **更好的开发体验**：声明式编程模型，专注于数据变化而非DOM操作
 4. **服务端渲染支持**：虚拟DOM可以在服务器端渲染为HTML字符串
 
-随着React的发展，Fiber架构进一步增强了这些优势，提供了更灵活的调度机制和更好的用户体验。通过深入理解这些机制，我们可以构建更高效、更可靠的React应用。`,__vite_glob_0_18=`# React状态管理与Redux深度解析
+随着React的发展，Fiber架构进一步增强了这些优势，提供了更灵活的调度机制和更好的用户体验。通过深入理解这些机制，我们可以构建更高效、更可靠的React应用。`,__vite_glob_0_18=`---
+title: "React状态管理与Redux深度解析"
+excerpt: "深入探讨React状态管理的各种方案，重点解析Redux的核心概念、工作原理以及最佳实践，帮助开发者构建可维护、可扩展的React应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# React状态管理与Redux深度解析
 
 ## 前言
 
@@ -21652,7 +21775,19 @@ React状态管理是构建复杂应用的关键部分，而Redux提供了一种�
 - **中型应用**：Redux或MobX等状态管理库提供更好的组织
 - **大型应用**：Redux + Redux Toolkit + RTK Query提供完整的状态管理解决方案
 
-无论选择哪种方案，关键是保持状态结构清晰、状态变化可预测，并遵循最佳实践来构建可维护、可扩展的应用。`,__vite_glob_0_19=`# React性能优化与最佳实践
+无论选择哪种方案，关键是保持状态结构清晰、状态变化可预测，并遵循最佳实践来构建可维护、可扩展的应用。`,__vite_glob_0_19=`---
+title: "React性能优化与最佳实践"
+excerpt: "深入探讨React应用的性能优化策略，从组件渲染优化到代码分割，从内存管理到构建优化，帮助开发者构建高性能的React应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# React性能优化与最佳实践
 
 ## 前言
 
@@ -23007,7 +23142,19 @@ React性能优化是一个多方面的过程，涉及组件渲染、代码分割
 
 记住，性能优化应该基于实际测量，而不是假设。在实施优化前，先使用React DevTools Profiler和其他性能工具识别真正的瓶颈，然后有针对性地进行优化。
 
-通过这些优化技术，你可以构建出响应迅速、用户体验良好的高性能React应用。`,__vite_glob_0_20=`# React服务端渲染与Next.js深度解析
+通过这些优化技术，你可以构建出响应迅速、用户体验良好的高性能React应用。`,__vite_glob_0_20=`---
+title: "React服务端渲染与Next.js深度解析"
+excerpt: "深入探讨React服务端渲染的原理、Next.js的核心特性以及最佳实践，帮助开发者构建高性能、SEO友好的React应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# React服务端渲染与Next.js深度解析
 
 ## 前言
 
@@ -24250,7 +24397,19 @@ Next.js的选择取决于你的应用需求：
 - **个性化内容**：使用SSR提供动态内容
 - **混合应用**：结合SSR和SSG，根据页面特性选择合适的渲染方式
 
-通过Next.js，你可以构建出高性能、SEO友好且用户体验优秀的React应用。无论是博客、电商网站还是企业应用，Next.js都能提供合适的解决方案。`,__vite_glob_0_21=`# 前端安全基础与XSS防护
+通过Next.js，你可以构建出高性能、SEO友好且用户体验优秀的React应用。无论是博客、电商网站还是企业应用，Next.js都能提供合适的解决方案。`,__vite_glob_0_21=`---
+title: "前端安全基础与XSS防护"
+excerpt: "深入探讨前端安全的基础知识，重点分析XSS攻击的原理、类型、防护策略以及最佳实践，帮助开发者构建更安全的前端应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# 前端安全基础与XSS防护
 
 ## 前言
 
@@ -25460,7 +25619,19 @@ document.addEventListener('DOMContentLoaded', () => {
 4. **安全API设计**：在服务器端进行输入清理和验证
 5. **定期安全审计**：使用工具检测潜在漏洞
 
-通过本文介绍的方法和最佳实践，你可以有效防范XSS攻击，构建更安全的前端应用。记住，安全是一个持续的过程，需要不断学习和适应新的威胁和技术。`,__vite_glob_0_22=`# CSRF攻击与防护策略
+通过本文介绍的方法和最佳实践，你可以有效防范XSS攻击，构建更安全的前端应用。记住，安全是一个持续的过程，需要不断学习和适应新的威胁和技术。`,__vite_glob_0_22=`---
+title: "CSRF攻击与防护策略"
+excerpt: "深入探讨CSRF攻击的原理、危害、检测方法以及全面的防护策略，帮助开发者构建更安全的Web应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# CSRF攻击与防护策略
 
 ## 前言
 
@@ -27239,7 +27410,19 @@ CSRF攻击是Web应用中常见的安全威胁，通过多层防护策略可以�
 4. **验证Referer和Origin头**：检查请求来源是否可信
 5. **自动化检测与监控**：定期扫描和实时监控可疑活动
 
-通过本文介绍的方法和实际应用案例，你可以构建一个全面的CSRF防护体系，保护用户免受跨站请求伪造攻击。记住，安全是一个持续的过程，需要不断评估和改进防护策略。`,__vite_glob_0_23=`# 点击劫持(Clickjacking)攻击与防护
+通过本文介绍的方法和实际应用案例，你可以构建一个全面的CSRF防护体系，保护用户免受跨站请求伪造攻击。记住，安全是一个持续的过程，需要不断评估和改进防护策略。`,__vite_glob_0_23=`---
+title: "点击劫持(Clickjacking)攻击与防护"
+excerpt: "深入探讨点击劫持攻击的原理、类型、危害以及全面的防护策略，帮助开发者构建更安全的Web应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# 点击劫持(Clickjacking)攻击与防护
 
 ## 前言
 
@@ -27815,7 +27998,19 @@ app.post('/api/transfer',
 3. **持续监控**：定期扫描和监控，及时发现安全漏洞
 4. **安全意识**：提高开发者和用户的安全意识
 
-通过实施这些防护措施，我们可以有效防范点击劫持攻击，保护用户和应用程序的安全。记住，Web安全是一个持续的过程，需要不断学习和更新防护策略。`,__vite_glob_0_24=`# 前端数据加密与传输安全
+通过实施这些防护措施，我们可以有效防范点击劫持攻击，保护用户和应用程序的安全。记住，Web安全是一个持续的过程，需要不断学习和更新防护策略。`,__vite_glob_0_24=`---
+title: "前端数据加密与传输安全"
+excerpt: "深入探讨前端数据加密与传输安全的核心技术，包括对称加密、非对称加密、哈希算法、数字签名以及HTTPS传输安全，帮助开发者构建更安全的前端应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# 前端数据加密与传输安全
 
 ## 前言
 
@@ -29636,7 +29831,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 3. **定期更新**：保持加密算法和库的最新版本
 4. **安全意识**：提高开发者和用户的安全意识
 
-通过实施这些安全措施，我们可以有效保护前端应用中的数据安全，防止数据泄露和篡改，为用户提供更安全的服务体验。记住，数据安全是一个持续的过程，需要不断学习和更新安全策略。`,__vite_glob_0_25=`# 前端安全最佳实践与综合防护
+通过实施这些安全措施，我们可以有效保护前端应用中的数据安全，防止数据泄露和篡改，为用户提供更安全的服务体验。记住，数据安全是一个持续的过程，需要不断学习和更新安全策略。`,__vite_glob_0_25=`---
+title: "前端安全最佳实践与综合防护"
+excerpt: "系统性地介绍前端安全的最佳实践，包括安全编码规范、安全测试方法、安全监控与响应、安全合规性以及综合安全架构设计，帮助开发者构建更加安全可靠的前端应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---
+
+# 前端安全最佳实践与综合防护
 
 ## 前言
 
@@ -33480,18 +33687,15 @@ document.addEventListener('DOMContentLoaded', () => {
 在实际应用中，我们应该根据具体场景和需求，选择合适的安全措施，并构建一个全面、灵活、可扩展的安全防护体系。同时，安全是一个持续的过程，需要不断更新和完善，以应对不断演变的安全威胁。
 
 通过实施这些最佳实践，我们可以大大提高前端应用的安全性，保护用户数据和隐私，增强用户信任，并降低安全风险带来的潜在损失。记住，安全不是一次性的任务，而是一个需要持续关注和改进的过程。`,__vite_glob_0_26=`---
-title: '微前端架构基础与实现原理'
-date: 2023-12-27 09:00:00
-author: '前端技术团队'
-cover: false
-top: false
-toc: true
-tags:
-- 微前端
-- 架构设计
-- 前端工程化
-categories:
-- 前端架构
+title: "微前端架构基础与实现原理"
+excerpt: "深入探讨微前端架构的基础概念、实现原理和最佳实践，帮助开发者理解并应用这一现代前端架构模式"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # 微前端架构基础与实现原理
@@ -34662,19 +34866,15 @@ console.log(sandboxWindow.globalVariable); // 'This is a global variable'
 在选择微前端架构时，需要根据项目的实际情况进行评估，权衡其带来的收益和增加的复杂性。对于中小型项目，可能不需要引入微前端架构；而对于大型、复杂的项目，微前端架构可以显著提高开发效率和代码质量。
 
 微前端架构仍在不断发展和演进中，未来可能会有更多优秀的解决方案和工具出现。作为前端开发者，我们应该持续关注这一领域的发展，不断学习和实践，以应对日益复杂的前端应用需求。`,__vite_glob_0_27=`---
-title: '微前端应用间通信与状态管理'
-date: 2023-12-27 10:00:00
-author: '前端技术团队'
-cover: false
-top: false
-toc: true
-tags:
-- 微前端
-- 状态管理
-- 应用通信
-- 架构设计
-categories:
-- 前端架构
+title: "微前端应用间通信与状态管理"
+excerpt: "深入探讨微前端架构中应用间通信机制和状态管理方案，帮助开发者解决微前端应用间的数据共享和交互问题"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # 微前端应用间通信与状态管理
@@ -37185,19 +37385,15 @@ const cartApp = new CartApp();
 无论选择哪种方式，都应该遵循松耦合、安全性、性能和可维护性的原则，设计清晰的接口，实现必要的安全机制，优化性能，并提供调试工具。
 
 通过合理的通信与状态管理设计，可以构建出高效、可靠、可维护的微前端系统，提高开发效率和用户体验。`,__vite_glob_0_28=`---
-title: '微前端样式隔离与沙箱机制'
-date: 2023-12-28 10:00:00
-author: '前端技术团队'
-cover: false
-top: false
-toc: true
-tags:
-- 微前端
-- 样式隔离
-- 沙箱机制
-- 安全隔离
-categories:
-- 前端架构
+title: "微前端样式隔离与沙箱机制"
+excerpt: "深入探讨微前端架构中的样式隔离和沙箱机制，帮助开发者解决微前端应用间的样式冲突和全局污染问题"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # 微前端样式隔离与沙箱机制
@@ -38344,19 +38540,15 @@ framework.loadApp('app2', app2Container);
 微前端中的样式隔离和沙箱机制是确保应用间独立性和安全性的关键技术。本文详细介绍了CSS Scoped、Shadow DOM、CSS Modules等样式隔离技术，以及快照沙箱和代理沙箱的实现原理。通过合理选择和组合这些技术，可以构建稳定、安全、高性能的微前端系统。
 
 在实际应用中，需要根据具体场景选择合适的技术方案，并遵循最佳实践，以确保微前端架构的成功实施。随着微前端技术的不断发展，样式隔离和沙箱机制也将不断演进，为开发者提供更强大、更灵活的工具。`,__vite_glob_0_29=`---
-title: '微前端性能优化与监控'
-date: 2023-12-29 10:00:00
-author: '前端技术团队'
-cover: false
-top: false
-toc: true
-tags:
-- 微前端
-- 性能优化
-- 监控
-- 性能指标
-categories:
-- 前端架构
+title: "微前端性能优化与监控"
+excerpt: "深入探讨微前端架构中的性能优化策略和监控方案，帮助开发者构建高性能、可观测的微前端应用"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
 ---
 
 # 微前端性能优化与监控
@@ -40443,15 +40635,16 @@ setInterval(() => {
 微前端性能优化与监控是确保微前端系统高效运行的关键环节。本文详细介绍了微前端环境下的性能挑战、优化策略和监控方案，包括资源加载优化、应用切换优化、运行时优化和关键性能指标监控。
 
 通过合理应用这些技术和策略，可以显著提升微前端系统的性能和用户体验。随着微前端技术的不断发展，性能优化和监控方案也将不断演进，为开发者提供更强大、更智能的工具和方法。`,__vite_glob_0_30=`---
-title: '微前端部署与运维实践'
-date: 2023-12-30 10:00:00
-author: '前端技术团队'
-cover: false
-top: false
-toc: true
-tags:
-- 微前端
-- 部署
+title: "微前端部署与运维实践"
+excerpt: "深入探讨微前端架构的部署策略和运维实践，帮助开发者实现微前端应用的持续集成、持续部署和高效运维"
+coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+date: "2025-12-16"
+author:
+  name: 小羽
+  picture: "/assets/blog/authors/jj.jpeg"
+ogImage:
+  url: "/assets/blog/dynamic-routing/cover.jpg"
+---- 部署
 - 运维
 - CI/CD
 categories:
