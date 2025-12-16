@@ -277,7 +277,7 @@ function App() {
 
   return (
     <ToastProvider>
-      {/* <PreloadResources resources={criticalResources} /> */}
+      <PreloadResources resources={criticalResources} />
       <Routes>
         <Route path="/" element={
           <PageTransition animation="fade" duration={300}>
